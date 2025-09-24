@@ -11,13 +11,25 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <img src="images/logo.png" alt="Logo Consultorio">
-        <nav class="nav-menu">
-            <a href="#" class="nav-item">Inicio</a>
-            <a href="#" class="nav-item">Servicios</a>
-            <a href="#" class="nav-item">Nosotros</a>
-            <a href="#" class="nav-item">Contacto</a>
+        <div class="logo">
+            <img src="images/logo-psicologia-infantil-tlaxcala.png" alt="Psicología Infantil Tlaxcala">
+        </div>
+        
+        <!-- HAMBURGER BUTTON) -->
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- NAVIGATION -->
+        <nav class="nav-menu" id="navMenu">
+            <a href="#inicio" class="nav-item">Inicio</a>
+            <a href="#servicios" class="nav-item">Servicios</a>
+            <a href="#nosotros" class="nav-item">Nosotros</a>
+            <a href="#contacto" class="nav-item">Contacto</a>
         </nav>
+        
         <button class="cta-button">Consulta Gratuita</button>
     </header>
         
@@ -143,5 +155,22 @@
     aria-label="Chatea con nosotros en WhatsApp">
         <img src="images/whatsapp-icon.png" alt="WhatsApp">
     </a>
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+
+        // Cerrar menú al hacer click en un enlace
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+                document.querySelector('.mobile-menu-toggle').classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
