@@ -655,12 +655,43 @@
     }
     
     /* Testimonials Section */
-    .testimonials-section { 
-        padding: 35px 12px; 
+    .testimonials-section {
+        padding: 35px 5px;
+        overflow-x: hidden;
     }
     
-    .testimonial { 
-        padding: 15px 10px; 
+    .testimonials-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        padding: 0 5px;
+        word-wrap: break-word;
+    }
+    
+    .testimonials-grid {
+        gap: 15px;
+        padding: 0 5px;
+        max-width: calc(100vw - 10px);
+    }
+    
+    .testimonial {
+        padding: 18px 12px;
+        margin: 0;
+        border-radius: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .testimonial p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        word-break: break-word;
+        hyphens: auto;
+    }
+    
+    .testimonial .author {
+        font-size: 0.8rem;
+        word-break: break-word;
     }
     
     /* About Section */
