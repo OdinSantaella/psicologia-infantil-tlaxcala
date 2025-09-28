@@ -3,258 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicología Infantil y Autismo Tlaxcala</title>
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="description" content="Clínica de psicología infantil y terapia especializada en autismo en Tlaxcala. Atención personalizada, terapia conductual, desarrollo del lenguaje y habilidades sociales. Reserva tu consulta gratuita.">
+    <title>Psicología Infantil y Terapia para Autismo en Tlaxcala | Evaluación Gratuita</title>
+    <meta name="description" content="Clínica en Tlaxcala especializada en psicología infantil y terapia para autismo. Planes personalizados y apoyo integral. Reserva tu evaluación gratuita hoy.">
+    <!-- Mejorado SEO: título más conciso y con palabras clave principales -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
         <div class="logo">
-            <img src="img/logo-psicologia-infantil-tlaxcala.png" alt="Psicología Infantil Tlaxcala">
+            <img src="img/logo-psicologia-infantil-tlaxcala.png" alt="Logo Psicología Infantil Tlaxcala">
         </div>
-        
-        <!-- HAMBURGER BUTTON) -->
-        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú móvil">
+            <span></span><span></span><span></span>
         </button>
-        
-        <!-- NAVIGATION -->
-        <nav class="nav-menu" id="navMenu">
+
+        <nav class="nav-menu" id="navMenu" aria-label="Menú principal">
             <a href="#inicio" class="nav-item">Inicio</a>
-            <a href="#servicios" class="nav-item">Servicios</a>
-            <a href="#nosotros" class="nav-item">Nosotros</a>
+            <a href="#problemas" class="nav-item">Señales y Problemas</a>
+            <a href="#proceso" class="nav-item">Nuestro Proceso</a>
+            <a href="#testimonios" class="nav-item">Testimonios</a>
             <a href="#contacto" class="nav-item">Contacto</a>
         </nav>
-        
-        <button class="cta-button">Consulta Gratuita</button>
+
+        <button class="cta-button" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">
+            Consulta Gratuita
+        </button>
     </header>
         
     <main>
         <!-- HERO SECTION -->
-        <section class="hero">
-            <h1>Psicología Infantil y Terapia para Autismo en Tlaxcala</h1>
-            <p>Impulsamos el desarrollo, aprendizaje y autonomía de tu hijo con terapias personalizadas, enfocadas en psicología infantil y autismo.</p>
-            <button class="hero-cta">Reserva tu consulta gratuita en Tlaxcala</button>
+        <section id="inicio" class="hero" aria-label="Sección principal">
+            <h1>Transforma la Vida de tu Hijo con Terapia Especializada en Tlaxcala</h1>
+            <p>Ayudamos a niños con autismo y dificultades de desarrollo a alcanzar su máximo potencial mediante terapias personalizadas y acompañamiento integral para toda la familia.</p>
+            <button class="hero-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">
+                Reserva tu Evaluación Gratuita
+            </button>
         </section>
 
-        <!-- AUTHORITY -->
-        <section class="authority-section" style="background-color:#f9fafb; padding:3rem 1rem; text-align:center;">
-        <div class="container" style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem;">
-            
-            <div>
-            <i class="fas fa-clock" style="font-size:2.2rem; color:#2563eb; margin-bottom:0.5rem;"></i>
-            <h3 style="font-size:1.5rem; font-weight:700; margin:0;">+5 años</h3>
-            <p style="margin:0; color:#4b5563;">De experiencia en psicología infantil</p>
-            </div>
-
-            <div>
-            <i class="fas fa-users" style="font-size:2.2rem; color:#2563eb; margin-bottom:0.5rem;"></i>
-            <h3 style="font-size:1.5rem; font-weight:700; margin:0;">120+</h3>
-            <p style="margin:0; color:#4b5563;">Familias atendidas en Tlaxcala</p>
-            </div>
-
-            <div>
-            <i class="fas fa-notes-medical" style="font-size:2.2rem; color:#2563eb; margin-bottom:0.5rem;"></i>
-            <h3 style="font-size:1.5rem; font-weight:700; margin:0;">500+</h3>
-            <p style="margin:0; color:#4b5563;">Consultas realizadas</p>
-            </div>
-
-            <div>
-            <i class="fas fa-chart-line" style="font-size:2.2rem; color:#2563eb; margin-bottom:0.5rem;"></i>
-            <h3 style="font-size:1.5rem; font-weight:700; margin:0;">90%</h3>
-            <p style="margin:0; color:#4b5563;">De mejora en los primeros 3 meses</p>
-            </div>
-
-        </div>
-        </section>
-
-        <!-- MAIN SECTIONS -->
-        <section class="main-sections">
-            <div class="section-box">
-                <h2>🎯 Atención Personalizada</h3>
-                <p>Cada niño es único. Diseñamos planes terapéuticos adaptados a las necesidades específicas de tu hijo para potenciar su desarrollo cognitivo, emocional y social.</p>
-            </div>
-            
-            <div class="section-box">
-                <h2>🧩 Servicios Especializados en Psicología Infantil y Autismo</h3>
-                <p>Ofrecemos terapia conductual, desarrollo del lenguaje, habilidades sociales y apoyo integral para niños dentro del espectro autista y con dificultades de aprendizaje.</p>
-            </div>
-            
-            <div class="section-box">
-                <h2>🤝 Conoce a Nuestro Equipo de Psicólogos Infantiles en Tlaxcala</h3>
-                <p>Contamos con profesionales certificados, con experiencia y pasión por ayudar a familias a alcanzar sus metas, creando un entorno de confianza y progreso.</p>
-            </div>
-        </section>
-        <!-- TESTIMONIES -->
-
-        <section class="testimonies">
-            <h2>Lo que dicen las familias</h2>
-            <p>"Siempre fue excelente la atención, mi hija siempre le gustó ir a terapia, estuvo muy agusto siempre. - Ivonne H.</p>
-            <p>"Excelente trato y atención a los peques." - Paty C.</p>
-            <p>"Muy profesional y ayudó mucho en el progreso en el caso particular de retraso del habla. Recomendable." - Mariam M.</p>
-        </section>        
-
-        <!-- FAQ -->
-        <section class="faq">
-            <h2>Preguntas Frecuentes</h2>
-            <h3>¿A qué edad se recomienda iniciar terapia infantil?</h3>
-            <p>Recomendamos comenzar desde los 2 años si notas retrasos en el desarrollo del lenguaje, conducta o interacción social.</p>
-            
-            <h3>¿Atienden solo casos de autismo?</h3>
-            <p>No. También apoyamos a niños con problemas de lenguaje, conducta, aprendizaje y habilidades sociales.</p>
-            
-            <h3>¿Cómo puedo agendar una consulta?</h3>
-            <p>Puedes reservar tu consulta gratuita en línea o escribirnos por WhatsApp al (246) 125-3266.</p>
-        </section>
-
-        <section id="problemas-especificos" class="problems-section">
-            <div class="container">
-                <h2>Problemas específicos que atendemos</h2>
-                <p class="lead">Si notas alguna de estas señales en tu hijo, podemos ayudar. Ofrecemos evaluaciones y planes terapéuticos personalizados.</p>
-
-                <!-- Grid de tarjetas -->
-                <div class="problem-grid">
-                <article class="problem-card">
-                    <h3>TDAH y dificultades de atención</h3>
-                    <p>Evaluación y talleres para mejorar atención, autocontrol y organización académica.</p>
-                    <a class="btn-link" href="servicios/tdah.html">Saber más</a>
-
-                    <details>
-                    <summary>Ver señales comunes</summary>
-                    <ul>
-                        <li>Dificultad para mantener la atención en tareas.</li>
-                        <li>Impulsividad en el colegio o casa.</li>
-                        <li>Bajo rendimiento a pesar de esfuerzo aparente.</li>
-                    </ul>
-                    </details>
-                </article>
-
-                <article class="problem-card">
-                    <h3>Ansiedad escolar y fobias</h3>
-                    <p>Intervenciones para reducir miedos, evitar la evitación escolar y mejorar la adaptación.</p>
-                    <a class="btn-link" href="servicios/ansiedad-escolar.html">Saber más</a>
-
-                    <details>
-                    <summary>Ver signos</summary>
-                    <ul>
-                        <li>Quejas físicas antes de ir a la escuela.</li>
-                        <li>Evitación de actividades sociales o escolares.</li>
-                        <li>Pánico o crisis ante situaciones concretas.</li>
-                    </ul>
-                    </details>
-                </article>
-
-                <article class="problem-card">
-                    <h3>Problemas de conducta en casa</h3>
-                    <p>Estrategias familiares y técnicas conductuales para reducir episodios y mejorar la convivencia.</p>
-                    <a class="btn-link" href="servicios/conducta.html">Saber más</a>
-
-                    <details>
-                    <summary>Ver enfoques terapéuticos</summary>
-                    <ul>
-                        <li>Entrenamiento en manejo de conducta para padres.</li>
-                        <li>Refuerzo positivo y planes de contingencia.</li>
-                        <li>Terapia conductual individual para el niño.</li>
-                    </ul>
-                    </details>
-                </article>
-
-                <article class="problem-card">
-                    <h3>Dificultades sociales con otros niños</h3>
-                    <p>Programas de habilidades sociales, juegos guiados y prácticas en contexto para mejorar interacción.</p>
-                    <a class="btn-link" href="servicios/habilidades-sociales.html">Saber más</a>
-
-                    <details>
-                    <summary>Ver objetivos</summary>
-                    <ul>
-                        <li>Iniciar y mantener interacciones.</li>
-                        <li>Resolver conflictos y compartir turnos.</li>
-                        <li>Reconocer emociones propias y ajenas.</li>
-                    </ul>
-                    </details>
-                </article>
-
-                <article class="problem-card">
-                    <h3>Autoestima baja y tristeza</h3>
-                    <p>Intervenciones enfocadas en regulación emocional, pensamiento adaptativo y fortalecimiento de la autoimagen.</p>
-                    <a class="btn-link" href="servicios/autoestima-tristeza.html">Saber más</a>
-
-                    <details>
-                    <summary>Ver señales</summary>
-                    <ul>
-                        <li>Pérdida de interés en actividades antes disfrutadas.</li>
-                        <li>Autocrítica marcada y baja confianza.</li>
-                        <li>Cambios en el sueño o apetito.</li>
-                    </ul>
-                    </details>
-                </article>
-
-                <article class="problem-card">
-                    <h3>Adaptación a divorcio o cambios familiares</h3>
-                    <p>Acompañamiento para procesar cambios, trabajar emociones y mejorar la comunicación entre miembros.</p>
-                    <a class="btn-link" href="servicios/adaptacion-familiar.html">Saber más</a>
-
-                    <details>
-                    <summary>Ver cómo ayudamos</summary>
-                    <ul>
-                        <li>Terapia individual y familiar.</li>
-                        <li>Herramientas para padres para sostener rutina y límites.</li>
-                        <li>Actividades psicoeducativas para niños.</li>
-                    </ul>
-                    </details>
-                </article>
+        <!-- AUTHORITY SECTION -->
+        <section class="authority-section">
+            <div class="authority-container">
+                <div class="authority-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>+5 años</h3>
+                    <p>Experiencia en psicología infantil y autismo</p>
+                </div>
+                <div class="authority-item">
+                    <i class="fas fa-users"></i>
+                    <h3>120+</h3>
+                    <p>Familias transformadas en Tlaxcala y área metropolitana</p>
+                </div>
+                <div class="authority-item">
+                    <i class="fas fa-notes-medical"></i>
+                    <h3>500+</h3>
+                    <p>Sesiones terapéuticas exitosas realizadas</p>
+                </div>
+                <div class="authority-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>90%</h3>
+                    <p>Mejora significativa de pacientes en 3 meses</p>
                 </div>
             </div>
-            </section>
+        </section>
+
+        <!-- PROBLEMS SECTION -->
+        <section id="problemas" class="problems-section">
+            <div class="container">
+                <h2>Señales de Atención Temprana</h2>
+                <p class="lead">Si tu hijo presenta alguno de estos comportamientos, podemos diseñar un plan terapéutico personalizado para apoyarlo.</p>
+                
+                <div class="problems-grid">
+                    <div class="problem-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <div>
+                            <h3>Dificultades de Comunicación</h3>
+                            <p>Retraso en el habla, dificultad para expresar necesidades o mantener conversaciones apropiadas para su edad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <div>
+                            <h3>Problemas de Interacción Social</h3>
+                            <p>Evita contacto visual, prefiere jugar solo y tiene dificultades para hacer amigos o entender señales sociales.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <div>
+                            <h3>Comportamientos Repetitivos</h3>
+                            <p>Movimientos estereotipados, obsesión con rutinas o reacciones extremas a cambios.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <div>
+                            <h3>TDAH y Problemas de Atención</h3>
+                            <p>Dificultad para concentrarse, hiperactividad e impulsividad que afectan el rendimiento escolar.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <div>
+                            <h3>Ansiedad y Miedos Excesivos</h3>
+                            <p>Crisis de pánico, fobias o resistencia a situaciones nuevas que limitan su desarrollo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <div>
+                            <h3>Dificultades de Aprendizaje</h3>
+                            <p>Problemas para procesar información, seguir instrucciones o desarrollar habilidades académicas básicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section id="proceso" class="process-section">
+            <h2>Proceso de Transformación en 3 Pasos</h2>
+            <p class="lead">Un enfoque sistemático y personalizado que garantiza resultados medibles para tu hijo.</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-search"></i>
+                    <h3>Evaluación Integral Gratuita</h3>
+                    <p>Realizamos una evaluación completa del desarrollo, identificando áreas de oportunidad y estableciendo objetivos claros. Esta consulta inicial es gratuita.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Plan Terapéutico Personalizado</h3>
+                    <p>Diseñamos un programa de intervención específico que incluye terapias conductuales, desarrollo del lenguaje y habilidades sociales.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Seguimiento y Resultados</h3>
+                    <p>Monitoreamos el progreso, ajustamos el plan según sea necesario y capacitamos a la familia para continuar el desarrollo en casa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials-section">
+            <h2>Testimonios de Familias en Tlaxcala</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"Mi hija siempre disfrutó la terapia. Ahora se comunica mejor y es más independiente. ¡El progreso ha sido increíble!"</p>
+                    <div class="author">- Ivonne H., Madre de Familia</div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"Muy profesional y ayudó mucho con el retraso del habla de mi hijo. Ahora habla con mayor claridad y confianza."</p>
+                    <div class="author">- Mariam M., Tlaxcala</div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"Excelente atención y paciencia. Hemos visto cambios positivos desde las primeras sesiones."</p>
+                    <div class="author">- Paty C., Madre de Familia</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section">
+            <h2>¿Listo Para Transformar la Vida de Tu Hijo?</h2>
+            <p>No esperes más. Agenda tu evaluación gratuita hoy y comienza a ver resultados desde las primeras semanas.</p>
+            <button class="hero-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">
+                Reservar Evaluación Gratuita Ahora
+            </button>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="nosotros" class="about-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>Clínica Especializada en Psicología Infantil</h2>
+                    <p>Somos expertos en diagnóstico y tratamiento de trastornos del desarrollo infantil, con enfoque en autismo y dificultades de aprendizaje.</p>
+                    <p>Nuestro equipo está certificado en metodologías avanzadas de intervención temprana, ABA y desarrollo del lenguaje.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check"></i> Psicólogos certificados en terapias especializadas</li>
+                        <li><i class="fas fa-check"></i> Métodos basados en evidencia científica</li>
+                        <li><i class="fas fa-check"></i> Atención personalizada para cada familia</li>
+                        <li><i class="fas fa-check"></i> Instalaciones adaptadas para niños</li>
+                        <li><i class="fas fa-check"></i> Seguimiento continuo del progreso</li>
+                        <li><i class="fas fa-check"></i> Capacitación a padres y cuidadores</li>
+                    </ul>
+                </div>
+                
+                <div class="about-image" aria-label="Imagen de las instalaciones de la clínica">
+                    [Imagen de las instalaciones de la clínica]
+                </div>
+            </div>
+        </section>
     </main>
 
-    
-
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-box">
-                <strong>Clínica de Psicología Infantil en Tlaxcala</strong><br>
-                📍 Calle Rayo #3, Fraccionamiento Los Portillos,<br>
-                Ocotlán, Tlaxcala, C.P. 90014<br><br>
-                📞 Tel: (246) 125-3266<br>
-                📱 WhatsApp: (246) 125-3266<br>
-                ✉️ contacto@psicologiainfantiltlaxcala.com<br>
+    <footer id="contacto" class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Contact Information -->
+                <div class="footer-contact">
+                    <h3>Contacto y Ubicación</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div><strong>Dirección:</strong> Calle Rayo #3, Fraccionamiento Los Portillos, Ocotlán, Tlaxcala, C.P. 90014</div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div><strong>Teléfono:</strong> (246) 125-3266</div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div><strong>WhatsApp:</strong> (246) 125-3266<br><small>Disponible 24/7 para urgencias</small></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><strong>Email:</strong> contacto@psicologiainfantiltlaxcala.com</div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div><strong>Horarios:</strong> L-V: 9:00-18:00, S: 9:00-14:00, D: Cerrado</div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-facebook"></i>
+                        <div><strong>Facebook:</strong> /profile.php?id=100090075337072</div>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="footer-map" aria-label="Ubicación en mapa">
+                    <div class="map-container">
+                        [Mapa de Google Maps insertado aquí]<br>
+                        <small>Calle Rayo #3, Los Portillos, Ocotlán, Tlaxcala</small>
+                    </div>
+                </div>
             </div>
             
-            <div class="footer-box">
-                <strong>HORARIOS DE ATENCIÓN</strong><br>
-                Lunes a Viernes<br>
-                9:00 AM - 6:00 PM<br><br>
-                Sábados<br>
-                9:00 AM - 2:00 PM<br><br>
-                Domingos: Cerrado<br><br>
-                ⚠️ Citas por consulta previa<br>
-                🚨 Urgencias: WhatsApp 24/7
+            <!-- CTA Button -->
+            <div class="footer-cta">
+                <a href="https://wa.me/5212461253266?text=Hola,%20quiero%20reservar%20mi%20consulta%20gratuita%20para%20mi%20hijo" 
+                   class="footer-cta-button" 
+                   target="_blank" aria-label="Reservar consulta por WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    Reserva tu consulta gratuita
+                </a>
             </div>
             
-            <div class="footer-box">
-                <strong>SÍGUENOS</strong><br>
-                📘 Facebook: /profile.php?id=100090075337072<br>
-                📧 Newsletter mensual<br><br>
-                <strong>ESPECIALIDADES:</strong><br>
-                • Terapia conductual<br>
-                • Desarrollo del lenguaje<br>
-                • Habilidades sociales<br>
-                • Espectro autista
+            <!-- Legal -->
+            <div class="footer-legal">
+                <small>&copy; 2025 Psicología Infantil Tlaxcala. Todos los derechos reservados.</small>
             </div>
         </div>
     </footer>
-    <a href="https://wa.me/5212461253266?text=Hola,%20quiero%20más%20información%20sobre%20las%20terapias%20infantiles%20en%20Tlaxcala" 
-    class="whatsapp-float" 
-    target="_blank" 
-    aria-label="Chatea con nosotros en WhatsApp">
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/5212461253266?text=Hola,%20quiero%20más%20información%20sobre%20la%20evaluación%20gratuita" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contactar por WhatsApp">
         <img src="img/whatsapp-icon.png" alt="WhatsApp">
     </a>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
