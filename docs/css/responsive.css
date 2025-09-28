@@ -148,31 +148,38 @@
     }
     
     /* Testimonials Section */
-    .testimonials-section { 
-        padding: 50px 20px; 
+    .testimonials-section {
+        padding: 60px 15px;
     }
     
-    .testimonials-section h2 { 
-        font-size: 28px; 
-        margin-bottom: 40px; 
+    .testimonials-section h2 {
+        font-size: 2rem;
     }
     
-    .testimonials-grid { 
-        gap: 20px; 
+    .testimonials-marquee-wrapper {
+        flex-direction: column;
+        height: 400px;
+        gap: 0;
     }
     
-    .testimonial { 
-        padding: 20px 15px; 
+    .testimonials-marquee-group {
+        height: 200px;
     }
     
-    .testimonial p { 
-        font-size: 16px; 
-        margin-bottom: 15px; 
-        line-height: 1.4; 
+    .testimonial-card {
+        padding: 20px 15px;
+        margin-bottom: 15px;
+        min-height: 150px;
     }
     
-    .testimonial .author { 
-        font-size: 14px; 
+    .testimonials-author {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .testimonials-author-content {
+        text-align: center;
     }
     
     /* About Section */
@@ -474,24 +481,17 @@
     }
     
     /* Testimonials Section */
-    .testimonials-section { 
-        padding: 40px 15px; 
+    .testimonials-section h2 {
+        font-size: 1.6rem;
     }
     
-    .testimonials-section h2 { 
-        font-size: 24px; 
+    .testimonial-card {
+        padding: 15px 12px;
+        min-height: 120px;
     }
     
-    .testimonial { 
-        padding: 18px 12px; 
-    }
-    
-    .testimonial p { 
-        font-size: 14px; 
-    }
-    
-    .testimonial .author { 
-        font-size: 13px; 
+    .testimonial-card p {
+        font-size: 0.9rem;
     }
     
     /* About Section */
@@ -652,46 +652,6 @@
     
     .process-step { 
         padding: 20px 12px; 
-    }
-    
-    /* Testimonials Section */
-    .testimonials-section {
-        padding: 35px 5px;
-        overflow-x: hidden;
-    }
-    
-    .testimonials-section h2 {
-        font-size: 1.4rem;
-        margin-bottom: 20px;
-        padding: 0 5px;
-        word-wrap: break-word;
-    }
-    
-    .testimonials-grid {
-        gap: 15px;
-        padding: 0 5px;
-        max-width: calc(100vw - 10px);
-    }
-    
-    .testimonial {
-        padding: 18px 12px;
-        margin: 0;
-        border-radius: 10px;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .testimonial p {
-        font-size: 0.85rem;
-        line-height: 1.4;
-        margin-bottom: 12px;
-        word-break: break-word;
-        hyphens: auto;
-    }
-    
-    .testimonial .author {
-        font-size: 0.8rem;
-        word-break: break-word;
     }
     
     /* About Section */
