@@ -247,22 +247,21 @@
     
     /* Footer Section */
     .footer {
-        padding: 40px 20px 20px;
-        background: #1f2937;
+        padding: 30px 0 15px 0;
+    }
+
+    .footer-container {
+        padding: 0 15px;
     }
     
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 30px;
-        margin-bottom: 30px;
-        text-align: left;
     }
     
     .footer-contact {
-        background: rgba(55, 65, 81, 0.5);
-        padding: 25px 20px;
-        border-radius: 12px;
-        border: 1px solid rgba(125, 211, 252, 0.2);
+        padding-right: 0;
+        order: 1;
     }
     
     .footer-contact h3 {
@@ -316,7 +315,11 @@
     }
     
     .footer-map {
-        order: -1;
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px solid #34495e;
+        padding-top: 30px;
+        order: 2;
     }
     
     .footer-map .map-container {
@@ -329,13 +332,8 @@
     }
     
     .footer-cta {
-        text-align: center;
-        padding: 25px 0;
-        border-top: 2px solid rgba(125, 211, 252, 0.3);
-        border-bottom: 2px solid rgba(125, 211, 252, 0.3);
-        margin: 25px 0;
-        background: rgba(14, 165, 233, 0.05);
-        border-radius: 12px;
+        margin: 25px 0 20px 0;
+        padding: 20px 0;
     }
     
     .footer-cta-button {
@@ -569,41 +567,49 @@
     }
     
     .footer-contact h3 {
-        font-size: 18px;
-        margin-bottom: 15px;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
     }
     
     .contact-item {
-        margin-bottom: 15px;
-        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-item i {
+        margin-bottom: 5px;
+        margin-right: 0;
     }
     
     .contact-item div {
-        font-size: 14px;
+        font-size: 0.9rem;
     }
     
     .contact-item strong {
         font-size: 15px;
     }
     
+    .footer-cta {
+        margin: 25px 0 20px 0;
+        padding: 20px 0;
+    }
+
     .footer-cta-button {
-        padding: 14px 24px;
-        font-size: 15px;
-        gap: 10px;
+        padding: 12px 20px;
+        font-size: 0.95rem;
     }
     
     .footer-cta-button i {
         font-size: 16px;
     }
     
-    .footer-map .map-container {
+    .map-container {
         min-height: 220px;
         border-radius: 8px;
     }
     
-    .footer-map .map-container iframe {
-        height: 220px;
-        border-radius: 8px;
+    .map-container iframe {
+        height: 200px;
     }
 }
 
