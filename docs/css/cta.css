@@ -1,0 +1,23 @@
+/* ========================================
+   CTA SECTION
+======================================== */
+.cta-section {
+    padding: 80px 40px;
+    background: linear-gradient(135deg,#0EA5E9,#7DD3FC);
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.footer-cta-button {
+    padding: 18px 36px;
+    background: white;
+    color: #1E40AF;
+    font-weight: 700;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(255,255,255,0.3);
+}

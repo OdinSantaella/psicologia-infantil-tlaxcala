@@ -1,0 +1,18 @@
+/* ========================================
+   FOOTER
+======================================== */
+.footer {
+    background: #1E40AF;
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.footer a {
+    color: #7DD3FC;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+}

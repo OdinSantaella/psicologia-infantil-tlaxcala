@@ -1,0 +1,17 @@
+/* ========================================
+   ANIMATIONS
+======================================== */
+@keyframes gradientShift {
+    0%,100%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+}
+
+@keyframes slideInUp {
+    0% { opacity:0; transform: translateY(40px); }
+    100% { opacity:1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+    0%,100%{background-position:-200% 0;}
+    50%{background-position:200% 0;}
+}
