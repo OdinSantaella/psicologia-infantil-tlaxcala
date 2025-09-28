@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicología Infantil y Autismo Tlaxcala</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
     <meta name="description" content="Clínica de psicología infantil y terapia especializada en autismo en Tlaxcala. Atención personalizada, terapia conductual, desarrollo del lenguaje y habilidades sociales. Reserva tu consulta gratuita.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,7 +12,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="logo">
-            <img src="images/logo-psicologia-infantil-tlaxcala.png" alt="Psicología Infantil Tlaxcala">
+            <img src="img/logo-psicologia-infantil-tlaxcala.png" alt="Psicología Infantil Tlaxcala">
         </div>
         
         <!-- HAMBURGER BUTTON) -->
@@ -110,6 +110,106 @@
             <h3>¿Cómo puedo agendar una consulta?</h3>
             <p>Puedes reservar tu consulta gratuita en línea o escribirnos por WhatsApp al (246) 125-3266.</p>
         </section>
+
+        <section id="problemas-especificos" class="problems-section">
+            <div class="container">
+                <h2>Problemas específicos que atendemos</h2>
+                <p class="lead">Si notas alguna de estas señales en tu hijo, podemos ayudar. Ofrecemos evaluaciones y planes terapéuticos personalizados.</p>
+
+                <!-- Grid de tarjetas -->
+                <div class="problem-grid">
+                <article class="problem-card">
+                    <h3>TDAH y dificultades de atención</h3>
+                    <p>Evaluación y talleres para mejorar atención, autocontrol y organización académica.</p>
+                    <a class="btn-link" href="servicios/tdah.html">Saber más</a>
+
+                    <details>
+                    <summary>Ver señales comunes</summary>
+                    <ul>
+                        <li>Dificultad para mantener la atención en tareas.</li>
+                        <li>Impulsividad en el colegio o casa.</li>
+                        <li>Bajo rendimiento a pesar de esfuerzo aparente.</li>
+                    </ul>
+                    </details>
+                </article>
+
+                <article class="problem-card">
+                    <h3>Ansiedad escolar y fobias</h3>
+                    <p>Intervenciones para reducir miedos, evitar la evitación escolar y mejorar la adaptación.</p>
+                    <a class="btn-link" href="servicios/ansiedad-escolar.html">Saber más</a>
+
+                    <details>
+                    <summary>Ver signos</summary>
+                    <ul>
+                        <li>Quejas físicas antes de ir a la escuela.</li>
+                        <li>Evitación de actividades sociales o escolares.</li>
+                        <li>Pánico o crisis ante situaciones concretas.</li>
+                    </ul>
+                    </details>
+                </article>
+
+                <article class="problem-card">
+                    <h3>Problemas de conducta en casa</h3>
+                    <p>Estrategias familiares y técnicas conductuales para reducir episodios y mejorar la convivencia.</p>
+                    <a class="btn-link" href="servicios/conducta.html">Saber más</a>
+
+                    <details>
+                    <summary>Ver enfoques terapéuticos</summary>
+                    <ul>
+                        <li>Entrenamiento en manejo de conducta para padres.</li>
+                        <li>Refuerzo positivo y planes de contingencia.</li>
+                        <li>Terapia conductual individual para el niño.</li>
+                    </ul>
+                    </details>
+                </article>
+
+                <article class="problem-card">
+                    <h3>Dificultades sociales con otros niños</h3>
+                    <p>Programas de habilidades sociales, juegos guiados y prácticas en contexto para mejorar interacción.</p>
+                    <a class="btn-link" href="servicios/habilidades-sociales.html">Saber más</a>
+
+                    <details>
+                    <summary>Ver objetivos</summary>
+                    <ul>
+                        <li>Iniciar y mantener interacciones.</li>
+                        <li>Resolver conflictos y compartir turnos.</li>
+                        <li>Reconocer emociones propias y ajenas.</li>
+                    </ul>
+                    </details>
+                </article>
+
+                <article class="problem-card">
+                    <h3>Autoestima baja y tristeza</h3>
+                    <p>Intervenciones enfocadas en regulación emocional, pensamiento adaptativo y fortalecimiento de la autoimagen.</p>
+                    <a class="btn-link" href="servicios/autoestima-tristeza.html">Saber más</a>
+
+                    <details>
+                    <summary>Ver señales</summary>
+                    <ul>
+                        <li>Pérdida de interés en actividades antes disfrutadas.</li>
+                        <li>Autocrítica marcada y baja confianza.</li>
+                        <li>Cambios en el sueño o apetito.</li>
+                    </ul>
+                    </details>
+                </article>
+
+                <article class="problem-card">
+                    <h3>Adaptación a divorcio o cambios familiares</h3>
+                    <p>Acompañamiento para procesar cambios, trabajar emociones y mejorar la comunicación entre miembros.</p>
+                    <a class="btn-link" href="servicios/adaptacion-familiar.html">Saber más</a>
+
+                    <details>
+                    <summary>Ver cómo ayudamos</summary>
+                    <ul>
+                        <li>Terapia individual y familiar.</li>
+                        <li>Herramientas para padres para sostener rutina y límites.</li>
+                        <li>Actividades psicoeducativas para niños.</li>
+                    </ul>
+                    </details>
+                </article>
+                </div>
+            </div>
+            </section>
     </main>
 
     
@@ -153,24 +253,8 @@
     class="whatsapp-float" 
     target="_blank" 
     aria-label="Chatea con nosotros en WhatsApp">
-        <img src="images/whatsapp-icon.png" alt="WhatsApp">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp">
     </a>
-    <script>
-        function toggleMobileMenu() {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            
-            navMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        }
-
-        // Cerrar menú al hacer click en un enlace
-        document.querySelectorAll('.nav-item').forEach(item => {
-            item.addEventListener('click', () => {
-                document.getElementById('navMenu').classList.remove('active');
-                document.querySelector('.mobile-menu-toggle').classList.remove('active');
-            });
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

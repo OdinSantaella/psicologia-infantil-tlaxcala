@@ -126,7 +126,7 @@ body {
 /* HERO */
 .hero {
     position: relative;
-    background: url("images/hero-bg.png") center/cover no-repeat;
+    background: url("../img/hero-bg.png") center/cover no-repeat;
     padding: 120px 40px;
     text-align: center;
     color: white;
@@ -558,4 +558,106 @@ body {
         max-height: none;
         overflow: visible;
     }
+}
+
+/* Sección Problemas específicos */
+.problems-section {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.problems-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.problems-section h2 {
+  font-size: 32px;
+  color: #1E40AF;
+  margin-bottom: 8px;
+}
+
+.problems-section .lead {
+  color: #4b5563;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid de tarjetas */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.problem-card {
+  background: #f8fafc;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.problem-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+}
+
+.problem-card h3 {
+  font-size: 20px;
+  color: #0EA5E9;
+  margin: 0;
+}
+
+.problem-card p {
+  color: #374151;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Link estilo botón */
+.btn-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #7DD3FC;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+/* details/summary */
+.problem-card details summary {
+  margin-top: 8px;
+  cursor: pointer;
+  color: #374151;
+  font-weight: 600;
+  list-style: none;
+}
+
+.problem-card details[open] summary {
+  color: #0ea5e9;
+}
+
+/* list inside details */
+.problem-card details ul {
+  margin: 8px 0 0 18px;
+  color: #555;
+}
+
+/* responsive small */
+@media (max-width: 480px) {
+  .problems-section h2 { font-size: 26px; }
+  .problem-card { padding: 18px; }
 }
