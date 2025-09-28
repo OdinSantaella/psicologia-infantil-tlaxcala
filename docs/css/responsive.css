@@ -1,53 +1,15 @@
 /* ========================================
-   MEDIA QUERIES GENERALES
+   TABLET RESPONSIVE (max-width: 1024px)
 ======================================== */
-@media(max-width:1024px){ 
-    .nav-menu { gap: 20px; } 
-}
-
-@media(max-width:768px){ 
-    .nav-menu { display:none; }
-    .mobile-menu-toggle { display:flex; }
-    .hero-cta {
-        padding: 16px 30px ;
-        font-size: 16px ;
-        min-width: 200px ;
-    }
+@media(max-width: 1024px) { 
+    /* Navigation Section */
+    .nav-menu { 
+        gap: 20px; 
+    } 
     
-    .cta-button {
-        padding: 8px 16px ;
-        font-size: 14px ;
-    }
-    
-    .footer-cta-button {
-        padding: 16px 28px ;
-        font-size: 16px ;
-        gap: 10px ;
-    }
-}
-
-@media(max-width:480px){ 
-    .hero h1 { font-size:32px; } 
-    .hero p { font-size:16px; } 
-    .hero-cta {
-        padding: 14px 24px ;
-        font-size: 15px ;
-        min-width: 180px ;
-    }
-}
-
-@media(max-width:360px){ 
-    .cta-button, .hero-cta, .footer-cta-button { font-size:16px; padding:14px 28px; min-width: 160px} 
-}
-
-/* ========================================
-   MOBILE OPTIMIZATIONS - ADDITIONAL CSS
-======================================== */
-
-/* AUTHORITY SECTION - 2x2 GRID MOBILE */
-@media (max-width: 1024px) {
+    /* Authority Section */
     .authority-container {
-        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         max-width: 600px;
     }
@@ -56,14 +18,74 @@
         padding: 25px 15px;
     }
     
-    .authority-item h3 { font-size: 1.8rem; }
-    .authority-item p { font-size: 15px; }
+    .authority-item h3 { 
+        font-size: 1.8rem; 
+    }
+    
+    .authority-item p { 
+        font-size: 15px; 
+    }
+
+    /* About Section */
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .about-content h2 {
+        font-size: 36px;
+    }
+    
+    .about-image {
+        min-height: 300px;
+        order: -1;
+    }
+
+    /* Footer Section */
+    .footer {
+        padding: 50px 30px 20px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
 }
 
-@media (max-width: 768px) {
-    .authority-section { padding: 50px 20px; }
+/* ========================================
+   MOBILE RESPONSIVE (max-width: 768px)
+======================================== */
+@media(max-width: 768px) { 
+    /* Navigation Section */
+    .nav-menu { 
+        display: none; 
+    }
+    
+    .mobile-menu-toggle { 
+        display: flex; 
+    }
+    
+    /* Hero Section */
+    .hero-cta {
+        padding: 16px 30px;
+        font-size: 16px;
+        min-width: 200px;
+    }
+    
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    /* Authority Section */
+    .authority-section { 
+        padding: 50px 20px; 
+    }
+    
     .authority-container {
-        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         max-width: 400px;
     }
@@ -72,49 +94,88 @@
         padding: 20px 15px;
     }
     
-    .authority-item i { font-size: 2rem; margin-bottom: 10px; }
-    .authority-item h3 { font-size: 1.5rem; margin: 8px 0 5px 0; }
-    .authority-item p { font-size: 14px; line-height: 1.3; }
-}
-
-/* PROBLEMS SECTION - MOBILE COMPACT */
-@media (max-width: 768px) {
-    .problems-section { padding: 50px 20px; }
-    .problems-section h2 { font-size: 28px; margin-bottom: 15px; }
-    .problems-section .lead { font-size: 16px; margin-bottom: 30px; }
-    .problems-grid { gap: 15px; }
-    .problem-item { padding: 20px 15px; gap: 15px; }
-    .problem-item .check-icon { font-size: 20px; }
-    .problem-item h3 { font-size: 18px; margin-bottom: 8px; }
-    .problem-item p { font-size: 14px; line-height: 1.4; }
-}
-
-
-/* PROCESS SECTION - MOBILE COMPACT */
-@media (max-width: 768px) {
-    .process-section { padding: 50px 20px; }
-    .process-section h2 { font-size: 28px; margin-bottom: 15px; }
-    .process-section .lead { font-size: 16px; margin-bottom: 40px; }
-    .process-steps { gap: 25px; }
-    .process-step { padding: 30px 20px; }
-    .step-number { top: -15px; width: 35px; height: 35px; font-size: 18px; }
-    .process-step i { font-size: 2rem; margin-bottom: 15px; }
-    .process-step h3 { font-size: 20px; margin-bottom: 12px; }
-    .process-step p { font-size: 14px; line-height: 1.4; }
-}
-
-/* TESTIMONIALS SECTION - MOBILE COMPACT */
-@media (max-width: 768px) {
-    .testimonials-section { padding: 50px 20px; }
-    .testimonials-section h2 { font-size: 28px; margin-bottom: 40px; }
-    .testimonials-grid { gap: 20px; }
-    .testimonial { padding: 20px 15px; }
-    .testimonial p { font-size: 16px; margin-bottom: 15px; line-height: 1.4; }
-    .testimonial .author { font-size: 14px; }
-}
-
-/* ABOUT SECTION - MOBILE COMPACT */
-@media (max-width: 768px) {
+    .authority-item i { 
+        font-size: 2rem; 
+        margin-bottom: 10px; 
+    }
+    
+    .authority-item h3 { 
+        font-size: 1.5rem; 
+        margin: 8px 0 5px 0; 
+    }
+    
+    .authority-item p { 
+        font-size: 14px; 
+        line-height: 1.3; 
+    }
+    
+    /* Problems Section */
+    .problems-section { 
+        padding: 50px 20px; 
+    }
+    
+    .problems-section h2 { 
+        font-size: 28px; 
+        margin-bottom: 15px; 
+    }
+    
+    .problems-section .lead { 
+        font-size: 16px; 
+        margin-bottom: 30px; 
+    }
+    
+    .problems-grid { 
+        gap: 15px; 
+    }
+    
+    .problem-item { 
+        padding: 20px 15px; 
+        gap: 15px; 
+    }
+    
+    .problem-item .check-icon { 
+        font-size: 20px; 
+    }
+    
+    .problem-item h3 { 
+        font-size: 18px; 
+        margin-bottom: 8px; 
+    }
+    
+    .problem-item p { 
+        font-size: 14px; 
+        line-height: 1.4; 
+    }
+    
+    /* Testimonials Section */
+    .testimonials-section { 
+        padding: 50px 20px; 
+    }
+    
+    .testimonials-section h2 { 
+        font-size: 28px; 
+        margin-bottom: 40px; 
+    }
+    
+    .testimonials-grid { 
+        gap: 20px; 
+    }
+    
+    .testimonial { 
+        padding: 20px 15px; 
+    }
+    
+    .testimonial p { 
+        font-size: 16px; 
+        margin-bottom: 15px; 
+        line-height: 1.4; 
+    }
+    
+    .testimonial .author { 
+        font-size: 14px; 
+    }
+    
+    /* About Section */
     .about-section {
         padding: 50px 20px;
     }
@@ -165,54 +226,296 @@
     .about-image {
         min-height: 250px;
         font-size: 14px;
-        order: -1; /* Imagen arriba en mobile */
+        order: -1;
         margin-bottom: 20px;
+    }
+    
+    /* CTA Section */
+    .cta-section { 
+        padding: 50px 20px; 
+    }
+    
+    .cta-section h2 { 
+        font-size: 28px; 
+        margin-bottom: 15px; 
+    }
+    
+    .cta-section p { 
+        font-size: 16px; 
+        margin-bottom: 30px; 
+    }
+    
+    /* Footer Section */
+    .footer {
+        padding: 40px 20px 20px;
+        background: #1f2937;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    
+    .footer-contact {
+        background: rgba(55, 65, 81, 0.5);
+        padding: 25px 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(125, 211, 252, 0.2);
+    }
+    
+    .footer-contact h3 {
+        font-size: 20px;
+        color: #7DD3FC;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        gap: 15px;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(125, 211, 252, 0.1);
+    }
+    
+    .contact-item:last-child {
+        border-bottom: none;
+    }
+    
+    .contact-item i {
+        color: #7DD3FC;
+        font-size: 18px;
+        margin-top: 3px;
+        flex-shrink: 0;
+        width: 20px;
+        text-align: center;
+    }
+    
+    .contact-item div {
+        color: #f3f4f6;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    
+    .contact-item strong {
+        color: #ffffff;
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .contact-item small {
+        color: #d1d5db;
+        font-size: 13px;
+        font-style: italic;
+    }
+    
+    .footer-map {
+        order: -1;
+    }
+    
+    .footer-map .map-container {
+        background: #4b5563;
+        border-radius: 12px;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #d1d5db;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid rgba(125, 211, 252, 0.2);
+    }
+    
+    .footer-cta {
+        text-align: center;
+        padding: 25px 0;
+        border-top: 2px solid rgba(125, 211, 252, 0.3);
+        border-bottom: 2px solid rgba(125, 211, 252, 0.3);
+        margin: 25px 0;
+        background: rgba(14, 165, 233, 0.05);
+        border-radius: 12px;
+    }
+    
+    .footer-cta-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 32px;
+        background: #22c55e;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        text-transform: none;
+        letter-spacing: 0.5px;
+    }
+    
+    .footer-cta-button:hover {
+        background: #16a34a;
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(34, 197, 94, 0.5);
+        color: #ffffff;
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .footer-cta-button i {
+        font-size: 18px;
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+    }
+    
+    .footer-legal {
+        text-align: center;
+        padding: 20px 0 10px;
+        border-top: 1px solid rgba(125, 211, 252, 0.2);
+        margin-top: 20px;
+    }
+    
+    .footer-legal small {
+        color: #d1d5db;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    
+    /* Spacing Utilities */
+    .authority-section + .problems-section,
+    .problems-section + .process-section,
+    .process-section + .testimonials-section,
+    .testimonials-section + .cta-section,
+    .cta-section + .about-section { 
+        margin-top: -20px; 
+    }
+    
+    .lead {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 25px;
     }
 }
 
-/* CTA SECTION - MOBILE COMPACT */
-@media (max-width: 768px) {
-    .cta-section { padding: 50px 20px; }
-    .cta-section h2 { font-size: 28px; margin-bottom: 15px; }
-    .cta-section p { font-size: 16px; margin-bottom: 30px; }
-}
-
-/* SMALL MOBILE OPTIMIZATIONS */
-@media (max-width: 480px) {
-    .authority-section { padding: 40px 15px; }
-    .authority-container { gap: 15px; max-width: 320px; }
-    .authority-item { padding: 18px 12px; }
-    .authority-item i { font-size: 1.8rem; margin-bottom: 8px; }
-    .authority-item h3 { font-size: 1.3rem; margin: 6px 0 4px 0; }
-    .authority-item p { font-size: 13px; line-height: 1.2; }
+/* ========================================
+   SMALL MOBILE (max-width: 480px)
+======================================== */
+@media(max-width: 480px) { 
+    /* Hero Section */
+    .hero h1 { 
+        font-size: 32px; 
+    } 
     
-    /* General sections padding reduction */
-    .problems-section,
-    .process-section,
-    .testimonials-section,
-    .about-section,
-    .cta-section { padding: 40px 15px; }
+    .hero p { 
+        font-size: 16px; 
+    } 
     
-    /* Headers size reduction */
-    .problems-section h2,
-    .process-section h2,
-    .testimonials-section h2,
-    .cta-section h2,
-    .about-content h2 { font-size: 24px; }
+    .hero-cta {
+        padding: 14px 24px;
+        font-size: 15px;
+        min-width: 180px;
+    }
     
-    .problem-item { padding: 18px 12px; gap: 12px; }
-    .problem-item h3 { font-size: 16px; }
-    .problem-item p { font-size: 13px; }
+    /* Authority Section */
+    .authority-section { 
+        padding: 40px 15px; 
+    }
     
-    .process-step { padding: 25px 15px; }
-    .process-step h3 { font-size: 18px; }
-    .process-step p { font-size: 13px; }
+    .authority-container { 
+        gap: 15px; 
+        max-width: 320px; 
+    }
     
-    .testimonial { padding: 18px 12px; }
-    .testimonial p { font-size: 14px; }
-    .testimonial .author { font-size: 13px; }
-
-    /* about section */
+    .authority-item { 
+        padding: 18px 12px; 
+    }
+    
+    .authority-item i { 
+        font-size: 1.8rem; 
+        margin-bottom: 8px; 
+    }
+    
+    .authority-item h3 { 
+        font-size: 1.3rem; 
+        margin: 6px 0 4px 0; 
+    }
+    
+    .authority-item p { 
+        font-size: 13px; 
+        line-height: 1.2; 
+    }
+    
+    /* Problems Section */
+    .problems-section { 
+        padding: 40px 15px; 
+    }
+    
+    .problems-section h2 { 
+        font-size: 24px; 
+    }
+    
+    .problem-item { 
+        padding: 18px 12px; 
+        gap: 12px; 
+    }
+    
+    .problem-item h3 { 
+        font-size: 16px; 
+    }
+    
+    .problem-item p { 
+        font-size: 13px; 
+    }
+    
+    /* Process Section */
+    .process-section { 
+        padding: 40px 15px; 
+    }
+    
+    .process-section h2 { 
+        font-size: 24px; 
+    }
+    
+    .process-step { 
+        padding: 25px 15px; 
+    }
+    
+    .process-step h3 { 
+        font-size: 18px; 
+    }
+    
+    .process-step p { 
+        font-size: 13px; 
+    }
+    
+    /* Testimonials Section */
+    .testimonials-section { 
+        padding: 40px 15px; 
+    }
+    
+    .testimonials-section h2 { 
+        font-size: 24px; 
+    }
+    
+    .testimonial { 
+        padding: 18px 12px; 
+    }
+    
+    .testimonial p { 
+        font-size: 14px; 
+    }
+    
+    .testimonial .author { 
+        font-size: 13px; 
+    }
+    
+    /* About Section */
     .about-section {
         padding: 40px 15px;
     }
@@ -251,27 +554,125 @@
         font-size: 13px;
         padding: 15px;
     }
+    
+    /* CTA Section */
+    .cta-section { 
+        padding: 40px 15px; 
+    }
+    
+    .cta-section h2 { 
+        font-size: 24px; 
+    }
+    
+    /* Footer Section */
+    .footer {
+        padding: 30px 15px 15px;
+    }
+    
+    .footer-contact {
+        padding: 20px 15px;
+    }
+    
+    .footer-contact h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-item {
+        margin-bottom: 15px;
+        gap: 12px;
+    }
+    
+    .contact-item div {
+        font-size: 14px;
+    }
+    
+    .contact-item strong {
+        font-size: 15px;
+    }
+    
+    .footer-cta-button {
+        padding: 14px 24px;
+        font-size: 15px;
+        gap: 10px;
+    }
+    
+    .footer-cta-button i {
+        font-size: 16px;
+    }
+    
+    .footer-map .map-container {
+        min-height: 180px;
+        font-size: 13px;
+        padding: 15px;
+    }
 }
 
-/* VERY SMALL MOBILE (360px and below) */
-@media (max-width: 360px) {
-    .authority-container { gap: 12px; max-width: 280px; }
-    .authority-item { padding: 15px 10px; }
-    .authority-item i { font-size: 1.6rem; margin-bottom: 6px; }
-    .authority-item h3 { font-size: 1.2rem; margin: 5px 0 3px 0; }
-    .authority-item p { font-size: 12px; }
+/* ========================================
+   VERY SMALL MOBILE (max-width: 360px)
+======================================== */
+@media(max-width: 360px) { 
+    /* General CTA Buttons */
+    .cta-button, 
+    .hero-cta, 
+    .footer-cta-button { 
+        font-size: 16px; 
+        padding: 14px 28px; 
+        min-width: 160px;
+    } 
     
-    .problems-section,
-    .process-section,
-    .testimonials-section,
-    .about-section,
-    .cta-section { padding: 35px 12px; }
+    /* Authority Section */
+    .authority-container { 
+        gap: 12px; 
+        max-width: 280px; 
+    }
     
-    .problem-item,
-    .testimonial { padding: 15px 10px; }
-    .process-step { padding: 20px 12px; }
-
-    /* about section */
+    .authority-item { 
+        padding: 15px 10px; 
+    }
+    
+    .authority-item i { 
+        font-size: 1.6rem; 
+        margin-bottom: 6px; 
+    }
+    
+    .authority-item h3 { 
+        font-size: 1.2rem; 
+        margin: 5px 0 3px 0; 
+    }
+    
+    .authority-item p { 
+        font-size: 12px; 
+    }
+    
+    /* Problems Section */
+    .problems-section { 
+        padding: 35px 12px; 
+    }
+    
+    .problem-item { 
+        padding: 15px 10px; 
+    }
+    
+    /* Process Section */
+    .process-section { 
+        padding: 35px 12px; 
+    }
+    
+    .process-step { 
+        padding: 20px 12px; 
+    }
+    
+    /* Testimonials Section */
+    .testimonials-section { 
+        padding: 35px 12px; 
+    }
+    
+    .testimonial { 
+        padding: 15px 10px; 
+    }
+    
+    /* About Section */
     .about-section {
         padding: 35px 12px;
     }
@@ -299,19 +700,41 @@
         font-size: 12px;
         padding: 12px;
     }
-}
-
-/* SPACING UTILITIES FOR MOBILE */
-@media (max-width: 768px) {
-    .authority-section + .problems-section,
-    .problems-section + .process-section,
-    .process-section + .testimonials-section,
-    .testimonials-section + .cta-section,
-    .cta-section + .about-section { margin-top: -20px; }
     
-    .lead {
-        font-size: 16px ;
-        line-height: 1.4 ;
-        margin-bottom: 25px ;
+    /* CTA Section */
+    .cta-section { 
+        padding: 35px 12px; 
+    }
+    
+    /* Footer Section */
+    .footer {
+        padding: 25px 12px 12px;
+    }
+    
+    .footer-contact {
+        padding: 15px 12px;
+    }
+    
+    .contact-item {
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .contact-item div {
+        font-size: 13px;
+    }
+    
+    .contact-item i {
+        font-size: 16px;
+        width: 18px;
+    }
+    
+    .footer-cta-button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .footer-legal small {
+        font-size: 12px;
     }
 }

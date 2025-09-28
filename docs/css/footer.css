@@ -2,19 +2,25 @@
    FOOTER
 ======================================== */
 .footer {
-    background: #374151 ; /* Gray instead of blue */
-    color: white ;
-    padding: 60px 40px 20px ;
+    background: #374151;
+    color: white;
+    padding: 60px 40px 20px;
 }
 
 /* Ensure footer links and elements maintain proper colors */
 .footer a {
-    color: #7DD3FC ;
+    color: #93c5fd ; /* Azul más claro para mejor contraste */
     transition: color 0.3s ease ;
 }
 
 .footer a:hover {
     color: #ffffff ;
+    text-decoration: underline;
+}
+
+.footer a:focus {
+    outline: 2px solid #93c5fd;
+    outline-offset: 1px;
 }
 
 .footer-contact h3 {
@@ -92,6 +98,11 @@
     color: white ;
 }
 
+.footer-cta-button:focus {
+    outline: 3px solid #fbbf24;
+    outline-offset: 2px;
+}
+
 .footer-cta-button i {
     font-size: 20px ;
 }
@@ -108,4 +119,21 @@
 .footer-legal small {
     color: #9ca3af ;
     font-size: 14px ;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .footer {
+        background: #000000;
+        border-top: 3px solid #ffffff;
+    }
+    
+    .contact-item div,
+    .footer-legal small {
+        color: #ffffff ;
+    }
+    
+    .footer-cta-button {
+        border: 3px solid #ffffff;
+    }
 }
