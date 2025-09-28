@@ -229,7 +229,6 @@
 }
 
 /* TESTIMONIALS SECTION */
-/* TESTIMONIALS SECTION - MARQUEE BIDIRECCIONAL */
 .testimonials-section {
     padding: 80px 20px;
     background: #f8f9fa;
@@ -263,7 +262,12 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #3498db;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
 .testimonials-author-content {
