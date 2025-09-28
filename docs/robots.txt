@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://odinsantaella.github.io/psicologia-infantil-tlaxcala/sitemap.xml
+
+# Block unnecesary files
+Disallow: /css/
+Disallow: /js/
+Disallow: /.git/
+Disallow: /README.md
+
+# Allow only important files
+Allow: /img/
+Allow: /index.html
