@@ -157,13 +157,20 @@
     }
     
     .testimonials-marquee-wrapper {
-        flex-direction: column;
+        flex-direction: row;
         height: 400px;
         gap: 0;
+        justify-content: center;
+    }
+
+    .testimonials-marquee-group.is-down {
+        display: none;
     }
     
     .testimonials-marquee-group {
-        height: 200px;
+        flex: none;
+        width: 100%;
+        max-width: 400px;
     }
     
     .testimonial-card {
