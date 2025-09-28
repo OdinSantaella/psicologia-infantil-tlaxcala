@@ -7,13 +7,8 @@
     padding: 60px 40px 20px;
 }
 
-/* Ensure footer links and elements maintain proper colors */
-.footer a {
-    color: #93c5fd ; /* Azul más claro para mejor contraste */
-    transition: color 0.3s ease ;
-}
 
-.footer a:hover {
+/* .footer a:hover {
     color: #ffffff ;
     text-decoration: underline;
 }
@@ -21,7 +16,7 @@
 .footer a:focus {
     outline: 2px solid #93c5fd;
     outline-offset: 1px;
-}
+} */
 
 .footer-contact h3 {
     font-size: 24px ;
