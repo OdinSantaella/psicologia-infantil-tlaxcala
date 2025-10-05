@@ -2,7 +2,7 @@
    AUTHORITY / FEATURES
 ======================================== */
 .authority-section {
-    background: linear-gradient(135deg,#f8fafc 0%,#f1f5f9 100%);
+    background: #E8F4F8;
     padding: 80px 40px;
     text-align: center;
     position: relative;
@@ -31,15 +31,15 @@
     position: absolute;
     top:0;left:0;right:0;
     height:3px;
-    background: linear-gradient(90deg,#0EA5E9,#7DD3FC,#0EA5E9);
+    background: linear-gradient(90deg,#5AB9B5,#6DB5D8,#5AB9B5);
     background-size:200% 100%;
     animation: shimmer 3s ease-in-out infinite;
 }
 
 .authority-item:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(14,165,233,0.15);
-    border-color: rgba(14,165,233,0.3);
+    box-shadow: 0 20px 40px rgba(90,185,181,0.2);
+    border-color: rgba(90,185,181,0.3);
 }
 
 /* PROBLEMS / PROCESS / TESTIMONIALS */
@@ -94,13 +94,13 @@
 
 .problems-section h2 {
     font-size: 42px;
-    color: #1E40AF;
+    color: #5AB9B5;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .problems-section .lead {
-    color: #4b5563;
+    color: #2B3A42;
     font-size: 20px;
     margin-bottom: 50px;
     max-width: 800px;
@@ -117,14 +117,35 @@
 }
 
 .problem-item {
-    background: #f8fafc;
+    background: white;
     padding: 30px;
     border-radius: 12px;
+    border-top: 4px solid #5AB9B5;
     box-shadow: 0 8px 30px rgba(0,0,0,0.06);
     display: flex;
     align-items: flex-start;
     gap: 20px;
     transition: transform 0.3s ease;
+}
+
+.problem-item:nth-child(2) {
+    border-top-color: #FFB3D9;
+}
+
+.problem-item:nth-child(3) {
+    border-top-color: #FFD93D;
+}
+
+.problem-item:nth-child(4) {
+    border-top-color: #B8A9E8;
+}
+
+.problem-item:nth-child(5) {
+    border-top-color: #5AB9B5;
+}
+
+.problem-item:nth-child(6) {
+    border-top-color: #FFB3D9;
 }
 
 .problem-item:hover {
@@ -133,7 +154,7 @@
 }
 
 .problem-item .check-icon {
-    color: #10b981;
+    color: #5AB9B5;
     font-size: 24px;
     margin-top: 5px;
     flex-shrink: 0;
@@ -141,31 +162,31 @@
 
 .problem-item h3 {
     font-size: 20px;
-    color: #0EA5E9;
+    color: #6DB5D8;
     margin-bottom: 10px;
 }
 
 .problem-item p {
-    color: #374151;
+    color: #2B3A42;
     line-height: 1.6;
 }
 
 /* PROCESS SECTION */
 .process-section {
-    background: #f9fafb;
+    background: #E8F4F8;
     padding: 80px 40px;
     text-align: center;
 }
 
 .process-section h2 {
     font-size: 42px;
-    color: #1E40AF;
+    color: #5AB9B5;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .process-section .lead {
-    color: #4b5563;
+    color: #2B3A42;
     font-size: 20px;
     margin-bottom: 60px;
     max-width: 700px;
@@ -199,8 +220,8 @@
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #0EA5E9;
-    color: white;
+    background: #FFD93D;
+    color: #2B3A42;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -213,25 +234,25 @@
 
 .process-step i {
     font-size: 2.5rem;
-    color: #7DD3FC;
+    color: #6DB5D8;
     margin-bottom: 20px;
 }
 
 .process-step h3 {
     font-size: 24px;
-    color: #1E40AF;
+    color: #5AB9B5;
     margin-bottom: 15px;
 }
 
 .process-step p {
-    color: #4b5563;
+    color: #2B3A42;
     line-height: 1.6;
 }
 
 /* TESTIMONIALS SECTION */
 .testimonials-section {
     padding: 80px 20px;
-    background: #f8f9fa;
+    background: white;
     text-align: center;
     overflow: hidden;
 }
@@ -239,13 +260,13 @@
 .testimonials-section h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #2c3e50;
+    color: #5AB9B5;
     font-weight: 600;
 }
 
 .testimonials-subtitle {
     font-size: 1.2rem;
-    color: #666;
+    color: #2B3A42;
     margin-bottom: 40px;
 }
 
@@ -262,12 +283,12 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #5AB9B5, #6DB5D8);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8px;
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 4px 15px rgba(90, 185, 181, 0.3);
 }
 
 .testimonials-author-content {
@@ -284,7 +305,7 @@
 .rating-value {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #3498db;
+    color: #5AB9B5;
 }
 
 .rating-stars {
@@ -293,7 +314,7 @@
 }
 
 .rating-stars .star {
-    color: #3498db;
+    color: #FFD93D;
     font-size: 1.2rem;
 }
 
@@ -304,7 +325,7 @@
 
 .rating-text {
     font-size: 1rem;
-    color: #666;
+    color: #2B3A42;
 }
 
 /* MARQUEE WRAPPER */
@@ -323,7 +344,7 @@
     left: 0;
     right: 0;
     height: 50px;
-    background: linear-gradient(to bottom, #f8f9fa, transparent);
+    background: linear-gradient(to bottom, white, transparent);
     z-index: 2;
     top: 0;
 }
@@ -331,7 +352,7 @@
 .testimonials-marquee-blur.is-bottom {
     top: auto;
     bottom: 0;
-    background: linear-gradient(to top, #f8f9fa, transparent);
+    background: linear-gradient(to top, white, transparent);
 }
 
 /* MARQUEE GROUPS */
@@ -351,12 +372,12 @@
 
 /* TESTIMONIAL CARDS */
 .testimonial-card {
-    background: white;
+    background: #E8F4F8;
     padding: 30px 25px;
     margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #5AB9B5;
     transition: transform 0.3s ease;
     text-align: left;
     min-height: 200px;
@@ -374,7 +395,7 @@
 }
 
 .testimonial-rating .star {
-    color: #3498db;
+    color: #FFD93D;
     font-size: 1rem;
 }
 
@@ -383,7 +404,7 @@
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #555;
+    color: #2B3A42;
 }
 
 .testimonial-author {
@@ -394,13 +415,13 @@
 
 .testimonial-author strong {
     font-weight: 600;
-    color: #3498db;
+    color: #5AB9B5;
     font-size: 0.95rem;
 }
 
 .testimonial-author span {
     font-size: 0.85rem;
-    color: #666;
+    color: #2B3A42;
 }
 
 /* ANIMATIONS */
@@ -433,22 +454,22 @@
     align-items: center;
     gap: 10px;
     background: white;
-    color: #3498db;
+    color: #FFB3D9;
     padding: 15px 25px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    border: 2px solid #3498db;
+    border: 2px solid #FFB3D9;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 179, 217, 0.2);
 }
 
 .testimonials-cta-button:hover {
-    background: #3498db;
+    background: #FFB3D9;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 8px 25px rgba(255, 179, 217, 0.3);
 }
 
 .testimonials-cta-button svg:last-child {
@@ -480,7 +501,7 @@
 
 /* ABOUT SECTION */
 .about-section {
-    background: #f9fafb;
+    background: #E8F4F8;
     padding: 80px 40px;
 }
 
@@ -492,7 +513,7 @@
 
 .about-section a:focus,
 .about-section button:focus {
-    outline: 2px solid #0EA5E9;
+    outline: 2px solid #5AB9B5;
     outline-offset: 2px;
 }
 
@@ -507,14 +528,14 @@
 
 .about-content h2 {
     font-size: 42px;
-    color: #1E40AF;
+    color: #5AB9B5;
     margin-bottom: 20px;
     font-weight: bold;
     line-height: 1.2;
 }
 
 .about-content p {
-    color: #4b5563;
+    color: #2B3A42;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -529,7 +550,7 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 15px;
-    color: #374151;
+    color: #2B3A42;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -539,7 +560,7 @@
 }
 
 .about-features li i {
-    color: #10b981;
+    color: #5AB9B5;
     margin-right: 15px;
     font-size: 18px;
     margin-top: 2px;

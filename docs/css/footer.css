@@ -2,7 +2,7 @@
    FOOTER
 ======================================== */
 .footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #2B3A42 0%, #1f2b31 100%);
     color: white;
     padding: 40px 0 20px 0;
     margin-top: 60px;
@@ -11,7 +11,7 @@
 .footer-contact h3 {
     font-size: 1.5rem;
     margin-bottom: 25px;
-    color: #3498db;
+    color: #5AB9B5;
     font-weight: 600;
 }
 
@@ -43,7 +43,7 @@
 
 .contact-item i {
     font-size: 1.2rem;
-    color: #3498db;
+    color: #6DB5D8;
     margin-right: 15px;
     margin-top: 3px;
     min-width: 20px;
@@ -69,7 +69,7 @@
 /* MAP SECTION */
 .footer-map {
     padding-left: 20px;
-    border-left: 2px solid #34495e;
+    border-left: 2px solid #5AB9B5;
 }
 
 .map-container {
@@ -92,7 +92,7 @@
     display: block;
     text-align: center;
     padding: 12px;
-    background: rgba(52, 73, 94, 0.8);
+    background: rgba(43, 58, 66, 0.9);
     color: #ecf0f1;
     font-size: 0.85rem;
     border-radius: 0 0 8px 8px;
@@ -121,7 +121,7 @@
 }
 
 .footer-map .map-container iframe:focus {
-    outline: 2px solid #7DD3FC;
+    outline: 2px solid #5AB9B5;
     outline-offset: 2px;
 }
 
@@ -130,8 +130,8 @@
     text-align: center;
     margin: 40px 0 30px 0;
     padding: 30px 0;
-    border-top: 1px solid #34495e;
-    border-bottom: 1px solid #34495e;
+    border-top: 1px solid #5AB9B5;
+    border-bottom: 1px solid #5AB9B5;
 }
 
 .footer-cta-button {
@@ -157,7 +157,7 @@
 }
 
 .footer-cta-button:focus {
-    outline: 3px solid #fbbf24;
+    outline: 3px solid #FFD93D;
     outline-offset: 2px;
 }
 
