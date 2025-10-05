@@ -32,13 +32,13 @@
 }
 
 .cta-button {
-    padding: 18px 36px ;
+    padding: 10px 24px ;
     font-size: 18px ;
-    font-weight: bold ;
+    font-weight: 600 ;
     color: white ;
-    background: linear-gradient(45deg, #5AB9B5, #6DB5D8) ;
+    background: #5AB9B5 ;
     border: none ;
-    border-radius: 12px ;
+    border-radius: 8px ;
     cursor: pointer ;
     box-shadow: 0 6px 15px rgba(0,0,0,0.2) ;
     transition: all 0.3s ease-in-out ;
@@ -47,7 +47,7 @@
 }
 
 .cta-button:hover {
-    background: linear-gradient(45deg, #4da8a4, #5ca3c7) ;
+    background: #4AA5A7 ;
     transform: translateY(-3px) scale(1.05) ;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25) ;
 }
