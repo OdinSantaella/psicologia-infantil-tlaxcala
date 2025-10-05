@@ -106,24 +106,6 @@
     position: relative;
 }
 
-.hero-subtitle {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.95);
-    margin-bottom: 25px;
-    line-height: 1.6;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hero-support {
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 30px;
-    opacity: 0.95;
-}
-
 .cta-container {
     display: flex;
     gap: 15px;
@@ -223,14 +205,6 @@
 
     .hero h1 {
         font-size: 32px;
-    }
-
-    .hero-subtitle {
-        font-size: 16px;
-    }
-
-    .hero-support {
-        font-size: 14px;
     }
 
     .hero-microcopy {
