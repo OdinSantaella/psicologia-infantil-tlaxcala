@@ -106,6 +106,16 @@
     position: relative;
 }
 
+.hero-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cta-container {
     display: flex;
     gap: 15px;
@@ -114,12 +124,6 @@
     margin-bottom: 20px;
 }
 
-.hero-microcopy {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 40px;
-    font-weight: 500;
-}
 
 .btn {
     padding: 18px 40px;
@@ -207,8 +211,8 @@
         font-size: 32px;
     }
 
-    .hero-microcopy {
-        font-size: 13px;
+    .hero-subtitle {
+        font-size: 16px;
     }
 
     .btn {
