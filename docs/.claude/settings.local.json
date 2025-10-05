@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Read(//d/Projects/Webs/Piscologia infantil/psicologia-infantil-tlaxcala/**)"
+      "Read(//d/Projects/Webs/Piscologia infantil/psicologia-infantil-tlaxcala/**)",
+      "Read(//d/Projects/Webs/**)"
     ],
     "deny": [],
     "ask": []
