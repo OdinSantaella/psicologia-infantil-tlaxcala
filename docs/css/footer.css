@@ -1,10 +1,11 @@
 /* ========================================
-   FOOTER OPTIMIZADO
+   FOOTER - OPCIÓN 2: ROSA-LAVANDA 🎀
 ======================================== */
 
+/* Fondo principal con gradiente rosa-lavanda */
 .footer {
-    background: linear-gradient(135deg, #2B3A42 0%, #1f2b31 100%);
-    color: white;
+    background: linear-gradient(135deg, #FFB3D9 0%, #B8A9E8 100%) !important;
+    color: white !important;
     padding: 60px 20px 30px;
     margin-top: 60px;
 }
@@ -28,54 +29,70 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
 
+/* Logo restaurado con colores originales + círculo blanco semi-transparente */
 .footer-logo-img {
     width: 120px;
     height: auto;
-    filter: brightness(0) invert(1);
+    /* ELIMINAR filtros que blanquean */
+    filter: none !important;
+    opacity: 1 !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: 3px solid rgba(255, 255, 255, 0.5) !important;
+    border-radius: 50%;
+    padding: 15px;
+    background-blend-mode: normal !important;
+    mix-blend-mode: normal !important;
 }
 
+/* Tagline en blanco suave */
 .footer-tagline {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.95) !important;
     line-height: 1.6;
+    text-align: center;
 }
 
+/* Redes sociales con fondo blanco transparente */
 .footer-social {
     display: flex;
     gap: 12px;
     margin-top: 10px;
+    justify-content: center;
 }
 
 .footer-social a {
     width: 40px;
     height: 40px;
-    background: rgba(90, 185, 181, 0.2);
+    background: rgba(255, 255, 255, 0.25) !important;
+    color: white !important;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #5AB9B5;
     text-decoration: none;
     font-size: 18px;
     transition: all 0.3s ease;
 }
 
 .footer-social a:hover {
-    background: #5AB9B5;
-    color: white;
+    background: white !important;
+    color: #FFB3D9 !important;
     transform: translateY(-3px);
 }
 
 /* ----- COLUMNAS 2 Y 3: CONTACTO Y HORARIOS ----- */
+/* Headers de secciones en amarillo brillante */
 .footer-section h3 {
-    color: #5AB9B5;
+    color: #FFD93D !important;
     font-size: 16px;
     margin-bottom: 20px;
     font-family: 'Poppins', 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .footer-contact {
@@ -91,16 +108,23 @@
     align-items: flex-start;
 }
 
+/* Íconos de contacto en amarillo */
 .contact-icon {
-    color: #5AB9B5;
+    color: #FFD93D !important;
     flex-shrink: 0;
     font-size: 18px;
     margin-top: 2px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* Texto general en blanco suave */
+.contact-item div {
+    color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .small-text {
     font-size: 12px;
-    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.85) !important;
     font-style: italic;
 }
 
@@ -108,13 +132,15 @@
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95) !important;
 }
 
+/* Horarios - negritas en amarillo */
 .hours-list strong {
-    color: #5AB9B5;
+    color: #FFD93D !important;
 }
 
-/* ----- MAPA ----- */
+/* ----- MAPA CON BORDE SUTIL ----- */
 .footer-map-container {
     margin: 30px 0;
 }
@@ -125,15 +151,16 @@
     height: 250px;
     margin: 0 auto;
     border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .footer-map:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 25px rgba(90, 185, 181, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .footer-map iframe {
@@ -142,21 +169,21 @@
     border: none;
 }
 
-/* ----- CTA WHATSAPP (manteniendo diseño original) ----- */
+/* ----- CTA WHATSAPP (mantener verde) ----- */
 .footer-cta {
     text-align: center;
     margin: 40px 0 30px 0;
     padding: 30px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-cta-button {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-    color: white;
+    background: #25D366 !important;
+    color: white !important;
     padding: 18px 35px;
     border-radius: 50px;
     text-decoration: none;
@@ -168,9 +195,9 @@
 }
 
 .footer-cta-button:hover {
+    background: #1faa52 !important;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-    background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.5);
 }
 
 .footer-cta-button:focus {
@@ -182,9 +209,9 @@
     font-size: 1.3rem;
 }
 
-/* ----- COPYRIGHT ----- */
+/* ----- COPYRIGHT CON LÍNEA SEPARADORA BLANCA ----- */
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
     padding-top: 25px;
     margin-top: 30px;
     text-align: center;
@@ -192,7 +219,7 @@
 }
 
 .footer-bottom p {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* ========================================
@@ -223,7 +250,9 @@
 ======================================== */
 
 @media (max-width: 768px) {
+    /* Asegurar que el gradiente se vea bien en mobile */
     .footer {
+        background: linear-gradient(135deg, #FFB3D9 0%, #B8A9E8 100%) !important;
         padding: 40px 20px 25px;
     }
 
@@ -239,8 +268,11 @@
         align-items: center;
     }
 
+    /* Logo más pequeño pero visible */
     .footer-logo-img {
         width: 100px;
+        height: auto;
+        padding: 12px;
     }
 
     .footer-tagline {
@@ -315,6 +347,12 @@
         gap: 25px;
     }
 
+    /* Logo aún más pequeño */
+    .footer-logo-img {
+        width: 80px;
+        padding: 10px;
+    }
+
     .contact-item {
         font-size: 13px;
         flex-direction: column;
@@ -336,13 +374,13 @@
 /* High contrast mode support */
 @media (prefers-contrast: high) {
     .footer {
-        background: #000000;
+        background: #000000 !important;
         border-top: 3px solid #ffffff;
     }
 
     .contact-item div,
     .footer-bottom p {
-        color: #ffffff;
+        color: #ffffff !important;
     }
 
     .footer-cta-button {

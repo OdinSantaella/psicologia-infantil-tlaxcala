@@ -40,42 +40,34 @@
    MOBILE RESPONSIVE (max-width: 768px)
 ======================================== */
 @media(max-width: 768px) {
-    /* Navigation Section */
+    /* Navigation Section - Simplificado para conversión */
+
+    /* Ocultar menú de navegación completamente */
     .nav-menu {
-        display: none;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background: white;
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        gap: 0;
-        z-index: 99;
+        display: none !important;
     }
 
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-item {
-        padding: 15px 20px;
-        border-bottom: 1px solid #E8F4F8;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-item:last-child {
-        border-bottom: none;
-    }
-
+    /* Ocultar botón hamburguesa */
     .mobile-menu-toggle {
-        display: flex;
+        display: none !important;
+    }
+
+    /* Mostrar SOLO logo + CTA */
+    .header {
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 50px;
     }
 
     .header .cta-button {
-        display: none;
+        display: inline-flex !important;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 25px;
+        white-space: nowrap;
     }
 
     /* Hero Section */
@@ -381,16 +373,26 @@
 /* ========================================
    SMALL MOBILE (max-width: 480px)
 ======================================== */
-@media(max-width: 480px) { 
+@media(max-width: 480px) {
+    /* Header Mobile Pequeño */
+    .logo img {
+        height: 45px;
+    }
+
+    .header .cta-button {
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+    }
+
     /* Hero Section */
-    .hero h1 { 
-        font-size: 32px; 
-    } 
-    
-    .hero p { 
-        font-size: 16px; 
-    } 
-    
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
     .hero-cta {
         padding: 14px 24px;
         font-size: 15px;
