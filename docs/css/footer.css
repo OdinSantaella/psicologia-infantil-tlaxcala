@@ -1,159 +1,154 @@
 /* ========================================
-   FOOTER
+   FOOTER OPTIMIZADO
 ======================================== */
+
 .footer {
-    background: linear-gradient(135deg, #5AB9B5 0%, #6DB5D8 100%);
+    background: linear-gradient(135deg, #2B3A42 0%, #1f2b31 100%);
     color: white;
-    padding: 40px 0 20px 0;
+    padding: 60px 20px 30px;
     margin-top: 60px;
-    position: relative;
-    overflow: hidden;
 }
 
-/* Patrón decorativo opcional */
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-        radial-gradient(circle at 20% 50%, rgba(255, 179, 217, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(184, 169, 232, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 40% 20%, rgba(255, 217, 61, 0.1) 0%, transparent 50%);
-    pointer-events: none;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-contact h3 {
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    color: #FFD93D;
+/* ----- TOP SECTION: 3 COLUMNAS ----- */
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: start;
+}
+
+/* ----- COLUMNA 1: LOGO Y REDES ----- */
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-logo-img {
+    width: 120px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    background: rgba(90, 185, 181, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5AB9B5;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #5AB9B5;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ----- COLUMNAS 2 Y 3: CONTACTO Y HORARIOS ----- */
+.footer-section h3 {
+    color: #5AB9B5;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', 'Inter', sans-serif;
     font-weight: 600;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
 }
 
 .footer-contact {
     padding-right: 20px;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-    z-index: 1;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 30px;
-    align-items: start;
-}
-
-/* CONTACT SECTION */
 .contact-item {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    padding: 10px 0;
-}
-
-.contact-item i {
-    font-size: 1.2rem;
-    color: #FFD93D;
-    margin-right: 15px;
-    margin-top: 3px;
-    min-width: 20px;
-    flex-shrink: 0;
-}
-
-.contact-item div {
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
     line-height: 1.6;
-    font-size: 0.95rem;
+    align-items: flex-start;
 }
 
-.contact-item strong {
-    color: #ffffff;
-    display: block;
-    margin-bottom: 3px;
-    font-weight: 600;
+.contact-icon {
+    color: #5AB9B5;
+    flex-shrink: 0;
+    font-size: 18px;
+    margin-top: 2px;
 }
 
-.contact-item small {
-    color: rgba(255, 255, 255, 0.85);
+.small-text {
+    font-size: 12px;
+    opacity: 0.8;
     font-style: italic;
 }
 
-/* MAP SECTION */
-.footer-map {
-    padding-left: 20px;
-    border-left: 2px solid rgba(255, 255, 255, 0.3);
+.hours-list p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-.map-container {
-    position: relative;
+.hours-list strong {
+    color: #5AB9B5;
+}
+
+/* ----- MAPA ----- */
+.footer-map-container {
+    margin: 30px 0;
+}
+
+.footer-map {
+    width: 100%;
+    max-width: 800px;
+    height: 250px;
+    margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    background: #fff;
-    padding: 3px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.map-container iframe {
+.footer-map:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(90, 185, 181, 0.3);
+}
+
+.footer-map iframe {
     width: 100%;
-    height: 300px;
+    height: 100%;
     border: none;
-    border-radius: 8px;
 }
 
-.map-container small {
-    display: block;
-    text-align: center;
-    padding: 12px;
-    background: rgba(90, 185, 181, 0.95);
-    color: #ffffff;
-    font-size: 0.85rem;
-    border-radius: 0 0 8px 8px;
-    margin-top: -4px;
-    font-weight: 500;
-}
-
-/* Loading state */
-.footer-map .map-container::before {
-    content: 'Cargando mapa...';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #9ca3af;
-    font-size: 16px;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.footer-map .map-container iframe[src] + ::before {
-    display: none;
-}
-
-.footer-map .map-container iframe[title] {
-    outline: none;
-}
-
-.footer-map .map-container iframe:focus {
-    outline: 2px solid #FFD93D;
-    outline-offset: 2px;
-}
-
-/* CTA BUTTON */
+/* ----- CTA WHATSAPP (manteniendo diseño original) ----- */
 .footer-cta {
     text-align: center;
     margin: 40px 0 30px 0;
     padding: 30px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-cta-button {
@@ -187,20 +182,155 @@
     font-size: 1.3rem;
 }
 
-.footer-cta-button i {
-    font-size: 20px;
-}
-
-.footer-legal {
+/* ----- COPYRIGHT ----- */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 25px;
+    margin-top: 30px;
     text-align: center;
-    padding-top: 20px;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.85rem;
+    font-size: 13px;
 }
 
-.footer-legal small {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 14px;
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ========================================
+   RESPONSIVE: TABLET (768px - 1024px)
+======================================== */
+
+@media (max-width: 1024px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-hours {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .hours-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+/* ========================================
+   RESPONSIVE: MOBILE (< 768px)
+======================================== */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 20px 25px;
+    }
+
+    /* UNA SOLA COLUMNA EN MÓVIL */
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    /* LOGO CENTRADO */
+    .footer-logo {
+        align-items: center;
+    }
+
+    .footer-logo-img {
+        width: 100px;
+    }
+
+    .footer-tagline {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    /* REDES SOCIALES CENTRADAS */
+    .footer-social {
+        justify-content: center;
+    }
+
+    /* CONTACTO CENTRADO */
+    .footer-contact {
+        padding-right: 0;
+    }
+
+    .contact-item {
+        justify-content: center;
+        text-align: left;
+        flex-direction: row;
+    }
+
+    .footer-section h3 {
+        text-align: center;
+    }
+
+    /* HORARIOS EN COLUMNA */
+    .hours-list {
+        display: block;
+    }
+
+    .hours-list p {
+        margin-bottom: 12px;
+    }
+
+    /* MAPA MÁS PEQUEÑO EN MÓVIL */
+    .footer-map {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    /* CTA ajustado para mobile */
+    .footer-cta {
+        margin: 25px 0 20px 0;
+        padding: 20px 0;
+    }
+
+    .footer-cta-button {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+
+    /* COPYRIGHT */
+    .footer-bottom {
+        font-size: 12px;
+        padding-top: 20px;
+        margin-top: 25px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE: MOBILE PEQUEÑO (< 480px)
+======================================== */
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 15px 20px;
+    }
+
+    .footer-top {
+        gap: 25px;
+    }
+
+    .contact-item {
+        font-size: 13px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .footer-map {
+        height: 180px;
+    }
+
+    .footer-cta-button {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
 }
 
 /* High contrast mode support */
@@ -209,12 +339,12 @@
         background: #000000;
         border-top: 3px solid #ffffff;
     }
-    
+
     .contact-item div,
-    .footer-legal small {
-        color: #ffffff ;
+    .footer-bottom p {
+        color: #ffffff;
     }
-    
+
     .footer-cta-button {
         border: 3px solid #ffffff;
     }
