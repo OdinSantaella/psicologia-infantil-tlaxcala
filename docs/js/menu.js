@@ -6,11 +6,16 @@ export function toggleMobileMenu() {
     menuToggle.classList.toggle('active');
 }
 
-// Close menu on link click or outside click
+window.toggleMobileMenu = toggleMobileMenu;
+
 export function initMobileMenu() {
     const navMenu = document.getElementById('navMenu');
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const header = document.querySelector('.header');
+
+    if (menuToggle) {
+        menuToggle.addEventListener('click', toggleMobileMenu);
+    }
 
     document.querySelectorAll('.nav-item').forEach(item => {
         item.addEventListener('click', () => {

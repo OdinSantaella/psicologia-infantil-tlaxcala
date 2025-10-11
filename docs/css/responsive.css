@@ -39,16 +39,45 @@
 /* ========================================
    MOBILE RESPONSIVE (max-width: 768px)
 ======================================== */
-@media(max-width: 768px) { 
+@media(max-width: 768px) {
     /* Navigation Section */
-    .nav-menu { 
-        display: none; 
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        gap: 0;
+        z-index: 99;
     }
-    
-    .mobile-menu-toggle { 
-        display: flex; 
+
+    .nav-menu.active {
+        display: flex;
     }
-    
+
+    .nav-item {
+        padding: 15px 20px;
+        border-bottom: 1px solid #E8F4F8;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .header .cta-button {
+        display: none;
+    }
+
     /* Hero Section */
     .hero-cta {
         padding: 16px 30px;
