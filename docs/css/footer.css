@@ -1,11 +1,11 @@
 /* ========================================
-   FOOTER - OPCIÓN 2: ROSA-LAVANDA 🎀
+   FOOTER - OPCIÓN 3: FONDO CLARO COLORIDO 🌈
 ======================================== */
 
-/* Fondo principal con gradiente rosa-lavanda */
+/* Fondo principal claro con gradiente suave */
 .footer {
-    background: linear-gradient(135deg, #FFB3D9 0%, #B8A9E8 100%) !important;
-    color: white !important;
+    background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%) !important;
+    color: #2B3A42 !important;
     padding: 60px 20px 30px;
     margin-top: 60px;
 }
@@ -30,32 +30,40 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    /* Eliminar cualquier estilo decorativo */
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
 }
 
-/* Logo restaurado con colores originales + círculo blanco semi-transparente */
+/* Logo SIN círculo - colores originales limpios */
 .footer-logo-img {
-    width: 120px;
+    width: 100px;
     height: auto;
-    /* ELIMINAR filtros que blanquean */
+    /* ELIMINAR todos los efectos decorativos */
     filter: none !important;
     opacity: 1 !important;
-    background: rgba(255, 255, 255, 0.3) !important;
-    border: 3px solid rgba(255, 255, 255, 0.5) !important;
-    border-radius: 50%;
-    padding: 15px;
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
     background-blend-mode: normal !important;
     mix-blend-mode: normal !important;
+    display: block;
 }
 
-/* Tagline en blanco suave */
+/* Tagline en gris */
 .footer-tagline {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.95) !important;
+    color: #666 !important;
     line-height: 1.6;
     text-align: center;
 }
 
-/* Redes sociales con fondo blanco transparente */
+/* Redes sociales con gradiente rosa-lavanda */
 .footer-social {
     display: flex;
     gap: 12px;
@@ -66,7 +74,7 @@
 .footer-social a {
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.25) !important;
+    background: linear-gradient(135deg, #FFB3D9, #B8A9E8) !important;
     color: white !important;
     border-radius: 50%;
     display: flex;
@@ -78,21 +86,21 @@
 }
 
 .footer-social a:hover {
-    background: white !important;
-    color: #FFB3D9 !important;
+    background: linear-gradient(135deg, #5AB9B5, #6DB5D8) !important;
+    color: white !important;
     transform: translateY(-3px);
 }
 
 /* ----- COLUMNAS 2 Y 3: CONTACTO Y HORARIOS ----- */
-/* Headers de secciones en amarillo brillante */
+/* Headers de secciones en turquesa */
 .footer-section h3 {
-    color: #FFD93D !important;
+    color: #5AB9B5 !important;
     font-size: 16px;
     margin-bottom: 20px;
     font-family: 'Poppins', 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: none;
 }
 
 .footer-contact {
@@ -108,23 +116,22 @@
     align-items: flex-start;
 }
 
-/* Íconos de contacto en amarillo */
+/* Íconos de contacto en rosa */
 .contact-icon {
-    color: #FFD93D !important;
+    color: #FFB3D9 !important;
     flex-shrink: 0;
     font-size: 18px;
     margin-top: 2px;
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
 }
 
-/* Texto general en blanco suave */
+/* Texto general en gris oscuro */
 .contact-item div {
-    color: rgba(255, 255, 255, 0.95) !important;
+    color: #2B3A42 !important;
 }
 
 .small-text {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.85) !important;
+    color: #666 !important;
     font-style: italic;
 }
 
@@ -132,15 +139,15 @@
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.95) !important;
+    color: #2B3A42 !important;
 }
 
-/* Horarios - negritas en amarillo */
+/* Horarios - negritas en turquesa */
 .hours-list strong {
-    color: #FFD93D !important;
+    color: #5AB9B5 !important;
 }
 
-/* ----- MAPA CON BORDE SUTIL ----- */
+/* ----- MAPA CON BORDE TURQUESA ----- */
 .footer-map-container {
     margin: 30px 0;
 }
@@ -151,16 +158,16 @@
     height: 250px;
     margin: 0 auto;
     border-radius: 12px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(90, 185, 181, 0.3);
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(90, 185, 181, 0.2);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .footer-map:hover {
     transform: scale(1.02);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(90, 185, 181, 0.3);
 }
 
 .footer-map iframe {
@@ -174,8 +181,8 @@
     text-align: center;
     margin: 40px 0 30px 0;
     padding: 30px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(90, 185, 181, 0.3);
+    border-bottom: 1px solid rgba(90, 185, 181, 0.3);
 }
 
 .footer-cta-button {
@@ -201,7 +208,7 @@
 }
 
 .footer-cta-button:focus {
-    outline: 3px solid #FFD93D;
+    outline: 3px solid #5AB9B5;
     outline-offset: 2px;
 }
 
@@ -209,9 +216,9 @@
     font-size: 1.3rem;
 }
 
-/* ----- COPYRIGHT CON LÍNEA SEPARADORA BLANCA ----- */
+/* ----- COPYRIGHT CON LÍNEA SEPARADORA TURQUESA ----- */
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-top: 1px solid rgba(90, 185, 181, 0.3) !important;
     padding-top: 25px;
     margin-top: 30px;
     text-align: center;
@@ -219,7 +226,17 @@
 }
 
 .footer-bottom p {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: #666 !important;
+}
+
+/* Links en el footer */
+.footer a:not(.footer-cta-button):not(.footer-social a) {
+    color: #5AB9B5 !important;
+    text-decoration: none;
+}
+
+.footer a:not(.footer-cta-button):not(.footer-social a):hover {
+    color: #FFB3D9 !important;
 }
 
 /* ========================================
@@ -250,9 +267,9 @@
 ======================================== */
 
 @media (max-width: 768px) {
-    /* Asegurar que el gradiente se vea bien en mobile */
+    /* Asegurar que el fondo claro se mantenga en mobile */
     .footer {
-        background: linear-gradient(135deg, #FFB3D9 0%, #B8A9E8 100%) !important;
+        background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%) !important;
         padding: 40px 20px 25px;
     }
 
@@ -268,11 +285,10 @@
         align-items: center;
     }
 
-    /* Logo más pequeño pero visible */
+    /* Logo más pequeño sin círculo */
     .footer-logo-img {
-        width: 100px;
+        width: 80px;
         height: auto;
-        padding: 12px;
     }
 
     .footer-tagline {
@@ -332,6 +348,13 @@
         padding-top: 20px;
         margin-top: 25px;
     }
+
+    /* Asegurar contraste en mobile */
+    .footer p,
+    .contact-item div,
+    .hours-list p {
+        color: #2B3A42 !important;
+    }
 }
 
 /* ========================================
@@ -349,8 +372,7 @@
 
     /* Logo aún más pequeño */
     .footer-logo-img {
-        width: 80px;
-        padding: 10px;
+        width: 70px;
     }
 
     .contact-item {
@@ -374,16 +396,17 @@
 /* High contrast mode support */
 @media (prefers-contrast: high) {
     .footer {
-        background: #000000 !important;
-        border-top: 3px solid #ffffff;
+        background: #ffffff !important;
+        border-top: 3px solid #000000;
     }
 
     .contact-item div,
-    .footer-bottom p {
-        color: #ffffff !important;
+    .footer-bottom p,
+    .hours-list p {
+        color: #000000 !important;
     }
 
     .footer-cta-button {
-        border: 3px solid #ffffff;
+        border: 3px solid #000000;
     }
 }
