@@ -1,0 +1,28 @@
+# System
+.DS_Store
+Thumbs.db
+*.log
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build
+node_modules/
+dist/
+.cache/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Netlify
+.netlify/
+
+# Claude
+.claude/
