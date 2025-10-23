@@ -1,0 +1,62 @@
+/* ========================================
+   PLAYFUL OCEAN PALETTE - COLOR VARIABLES
+======================================== */
+:root {
+    /* Primary Colors */
+    --turquoise: #5AB9B5;
+    --sky-blue: #6DB5D8;
+
+    /* Accent Colors */
+    --pastel-pink: #FFB3D9;
+    --cheerful-yellow: #FFD93D;
+
+    /* Secondary Color */
+    --lavender: #B8A9E8;
+
+    /* Neutral Colors */
+    --light-gray: #E8F4F8;
+    --text-gray: #2B3A42;
+
+    /* Predefined Gradients */
+    --gradient-header: linear-gradient(90deg, #5AB9B5, #6DB5D8);
+    --gradient-hero: linear-gradient(135deg, #FFB3D9, #B8A9E8);
+}
+
+/* ========================================
+   RESET & BASE
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2B3A42;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.025em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
