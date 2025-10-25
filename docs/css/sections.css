@@ -205,6 +205,29 @@
     line-height: 1.6;
 }
 
+.process-image {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.process-image picture {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.process-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.process-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
 /* TESTIMONIALS SECTION */
 .testimonials-section {
     padding: 80px 20px;
