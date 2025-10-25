@@ -216,10 +216,10 @@
         flex-direction: column;
         padding: 0 10px;
     }
-
     .trust-bar {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 5px;
+        padding: 10px 20px;
     }
 
     .trust-item {
