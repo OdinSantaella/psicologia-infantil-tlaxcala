@@ -369,7 +369,7 @@
     }
     
     /* Spacing Utilities */
-    .problems-section,
+    .trust-bar-section + .problems-section,
     .problems-section + .process-section,
     .process-section + .testimonials-section,
     .testimonials-section + .cta-section,
