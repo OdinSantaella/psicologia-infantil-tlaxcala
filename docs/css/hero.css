@@ -146,7 +146,7 @@
 }
 
 .trust-bar {
-    background: white;
+    background: #5AB9B5;
     padding: 25px 20px;
     border-radius: 15px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
@@ -166,7 +166,7 @@
 
 .trust-icon {
     font-size: 24px;
-    color: #5AB9B5;
+    color: white;
     flex-shrink: 0;
 }
 
@@ -174,18 +174,18 @@
     text-align: left;
     font-size: 14px;
     line-height: 1.4;
-    color: #2B3A42;
+    color: white;
 }
 
 .trust-text strong {
     display: block;
     font-weight: 600;
-    color: #5AB9B5;
+    color: white;
 }
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 85vh;
+        min-height: 55vh;
         background:
             linear-gradient(135deg,
                 rgba(90, 185, 181, 0.68),

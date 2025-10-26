@@ -3,7 +3,8 @@
     "allow": [
       "Read(//d/Projects/Webs/Piscologia infantil/psicologia-infantil-tlaxcala/**)",
       "Read(//d/Projects/Webs/**)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(sed:*)"
     ],
     "deny": [],
     "ask": []
