@@ -145,35 +145,40 @@
     border-color: #FFB3D9;
 }
 
-.trust-bar {
+/* ========================================
+   TRUST BAR SECTION
+======================================== */
+.trust-bar-section {
     background: #5AB9B5;
-    padding: 25px 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    padding: 40px 20px;
+}
+
+.trust-bar {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+    gap: 30px;
 }
 
 .trust-item {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 .trust-icon {
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
 }
 
 .trust-text {
     text-align: left;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.5;
     color: white;
 }
 
@@ -181,13 +186,13 @@
     display: block;
     font-weight: 600;
     color: white;
+    margin-bottom: 4px;
+    font-size: 15px;
 }
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 50vh;
-        max-height: 50vh;
-        padding-bottom: 20px;
+        min-height: 65vh;
         background:
             linear-gradient(135deg,
                 rgba(90, 185, 181, 0.68),
@@ -197,47 +202,60 @@
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        background-attachment: scroll;
     }
 
     .hero-content {
-        padding: 20px 20px 0 20px;
+        padding: 30px 20px;
     }
 
     .hero h1 {
-        font-size: 28px;
-        margin-bottom: 12px;
-    }
-
-    .hero-subtitle {
-        font-size: 14px;
+        font-size: 32px;
         margin-bottom: 15px;
     }
 
-    .btn {
-        padding: 13px 25px;
+    .hero-subtitle {
         font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 16px;
         width: 100%;
         justify-content: center;
     }
 
     .cta-container {
         flex-direction: column;
-        padding: 0 10px;
-        gap: 10px;
-        margin-bottom: 15px;
+        padding: 0;
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    /* Trust bar section mobile */
+    .trust-bar-section {
+        padding: 30px 20px;
     }
 
     .trust-bar {
         grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 15px 20px;
-        margin-top: 0;
+        gap: 25px;
     }
 
     .trust-item {
-        justify-content: flex-start;
-        padding: 5px;
+        gap: 12px;
+    }
+
+    .trust-icon {
+        font-size: 24px;
+    }
+
+    .trust-text {
+        font-size: 13px;
+    }
+
+    .trust-text strong {
+        font-size: 14px;
     }
 }
 
