@@ -77,8 +77,8 @@
     font-size: 48px;
     font-weight: 700;
     color: white;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    line-height: 1.15;
+    margin-bottom: 12px;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -209,13 +209,14 @@
     }
 
     .hero h1 {
-        font-size: 32px;
-        margin-bottom: 15px;
+        font-size: 30px;
+        line-height: 1.1;
+        margin-bottom: 10px;
     }
 
     .hero-subtitle {
         font-size: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
 
     .btn {
@@ -234,7 +235,7 @@
 
     /* Trust bar section mobile */
     .trust-bar-section {
-        padding: 30px 20px;
+        padding: 25px 20px;
     }
 
     .trust-bar {
