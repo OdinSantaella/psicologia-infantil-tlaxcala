@@ -185,29 +185,38 @@
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 55vh;
+        min-height: 50vh;
+        max-height: 50vh;
+        padding-bottom: 20px;
         background:
             linear-gradient(135deg,
                 rgba(90, 185, 181, 0.68),
                 rgba(109, 181, 216, 0.63)
             ),
-            url('../img/hero-terapia-autismo-tlaxcala.webp') ;
-        background-size: cover ;
-        background-position: center ;
-        background-repeat: no-repeat ;
+            url('../img/hero-terapia-autismo-tlaxcala.webp');
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding: 20px 20px 0 20px;
     }
 
     .hero h1 {
-        font-size: 32px;
+        font-size: 28px;
+        margin-bottom: 12px;
     }
 
     .hero-subtitle {
-        font-size: 16px;
+        font-size: 14px;
+        margin-bottom: 15px;
     }
 
     .btn {
-        padding: 15px 30px;
-        font-size: 16px;
+        padding: 13px 25px;
+        font-size: 15px;
         width: 100%;
         justify-content: center;
     }
@@ -215,15 +224,20 @@
     .cta-container {
         flex-direction: column;
         padding: 0 10px;
+        gap: 10px;
+        margin-bottom: 15px;
     }
+
     .trust-bar {
         grid-template-columns: 1fr;
-        gap: 5px;
-        padding: 10px 20px;
+        gap: 15px;
+        padding: 15px 20px;
+        margin-top: 0;
     }
 
     .trust-item {
         justify-content: flex-start;
+        padding: 5px;
     }
 }
 
@@ -236,10 +250,10 @@
             rgba(90, 185, 181, 0.68),
             rgba(109, 181, 216, 0.63)
         ),
-        url('../img/hero-terapia-autismo-tlaxcala.jpg') ;
-    background-size: cover ;
-    background-position: center ;
-    background-repeat: no-repeat ;
+        url('../img/hero-terapia-autismo-tlaxcala.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Fallback WebP en mobile */
@@ -250,9 +264,9 @@
                 rgba(90, 185, 181, 0.68),
                 rgba(109, 181, 216, 0.63)
             ),
-            url('../img/hero-terapia-autismo-tlaxcala.jpg') ;
-        background-size: cover ;
-        background-position: center ;
-        background-repeat: no-repeat ;
+            url('../img/hero-terapia-autismo-tlaxcala.jpg');
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
     }
 }
