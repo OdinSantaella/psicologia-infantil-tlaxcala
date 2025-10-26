@@ -116,12 +116,14 @@
     align-items: flex-start;
 }
 
-/* Íconos de contacto en rosa */
+/* Íconos de contacto en turquesa */
 .contact-icon {
-    color: #FFB3D9 !important;
+    color: #5AB9B5 !important;
     flex-shrink: 0;
     font-size: 18px;
-    margin-top: 2px;
+    margin-top: 0;
+    margin-right: 2px;
+    line-height: 1;
 }
 
 /* Texto general en gris oscuro */
@@ -310,6 +312,9 @@
         justify-content: center;
         text-align: left;
         flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: nowrap;
     }
 
     .footer-section h3 {
