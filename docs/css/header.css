@@ -27,6 +27,13 @@
     transition: transform 0.3s ease;
 }
 
+.logo-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #25679b; /* o el color que uses */
+    white-space: nowrap;
+}
+
 .logo:hover img {
     transform: scale(1.05);
 }

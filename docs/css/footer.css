@@ -4,7 +4,7 @@
 
 /* Fondo principal claro con gradiente suave */
 .footer {
-    background: linear-gradient(135deg, #6fb0c9, #6fb0c9);
+    background: linear-gradient(135deg, #25679b, #25679b);
     color: #2B3A42;
     padding: 60px 20px 30px;
 }
@@ -265,9 +265,7 @@
 ======================================== */
 
 @media (max-width: 768px) {
-    /* Asegurar que el fondo claro se mantenga en mobile */
     .footer {
-        background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%);
         padding: 40px 20px 25px;
     }
 
@@ -349,13 +347,6 @@
         padding-top: 20px;
         margin-top: 25px;
     }
-
-    /* Asegurar contraste en mobile */
-    .footer p,
-    .contact-item div,
-    .hours-list p {
-        color: #2B3A42;
-    }
 }
 
 /* ========================================
@@ -399,15 +390,5 @@
     .footer {
         background: #ffffff;
         border-top: 3px solid #000000;
-    }
-
-    .contact-item div,
-    .footer-bottom p,
-    .hours-list p {
-        color: #000000;
-    }
-
-    .footer-cta-button {
-        border: 3px solid #000000;
     }
 }
