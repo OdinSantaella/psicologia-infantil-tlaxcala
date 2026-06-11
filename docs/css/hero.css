@@ -194,14 +194,8 @@
 @media (max-width: 768px) {
     .hero {
         min-height: 65vh;
-        background:
-            linear-gradient(135deg,
-                rgba(90, 185, 181, 0.68),
-                rgba(109, 181, 216, 0.63)
-            ),
-            url('../img/hero-terapia-autismo-tlaxcala.webp');
         background-size: cover;
-        background-position: center bottom;
+        background-position: left center;
         background-repeat: no-repeat;
     }
 
