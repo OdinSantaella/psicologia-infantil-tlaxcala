@@ -50,7 +50,6 @@
 
 .problems-section h2 {
     font-size: 42px;
-    color: #5AB9B5;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -136,7 +135,6 @@
 
 .process-section h2 {
     font-size: 42px;
-    color: #5AB9B5;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -205,6 +203,29 @@
     line-height: 1.6;
 }
 
+.process-image {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.process-image picture {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.process-image img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.process-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
 /* TESTIMONIALS SECTION */
 .testimonials-section {
     padding: 80px 20px;
@@ -216,7 +237,6 @@
 .testimonials-section h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #5AB9B5;
     font-weight: 600;
 }
 
@@ -410,19 +430,19 @@
     align-items: center;
     gap: 10px;
     background: white;
-    color: #FFB3D9;
+    color: #ee51a0;
     padding: 15px 25px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    border: 2px solid #FFB3D9;
+    border: 2px solid #ffe0ef;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(255, 179, 217, 0.2);
 }
 
 .testimonials-cta-button:hover {
-    background: #FFB3D9;
+    background: #ee51a0;
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 179, 217, 0.3);
@@ -484,7 +504,6 @@
 
 .about-content h2 {
     font-size: 42px;
-    color: #5AB9B5;
     margin-bottom: 20px;
     font-weight: bold;
     line-height: 1.2;
