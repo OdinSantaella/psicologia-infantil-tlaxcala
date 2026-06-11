@@ -49,6 +49,10 @@ h1, h2, h3 {
     letter-spacing: -0.025em;
 }
 
+h2{
+    color: #346865;
+}
+
 a {
     text-decoration: none;
     color: inherit;

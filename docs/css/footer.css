@@ -4,8 +4,8 @@
 
 /* Fondo principal claro con gradiente suave */
 .footer {
-    background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%) !important;
-    color: #2B3A42 !important;
+    background: linear-gradient(135deg, #6fb0c9, #6fb0c9);
+    color: #2B3A42;
     padding: 60px 20px 30px;
     margin-top: 60px;
 }
@@ -30,35 +30,32 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    /* Eliminar cualquier estilo decorativo */
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    box-shadow: none !important;
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none;
 }
 
 /* Logo SIN círculo - colores originales limpios */
 .footer-logo-img {
     width: 100px;
     height: auto;
-    /* ELIMINAR todos los efectos decorativos */
-    filter: none !important;
-    opacity: 1 !important;
-    background: none !important;
-    background-color: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    background-blend-mode: normal !important;
-    mix-blend-mode: normal !important;
+    filter: none;
+    opacity: 1;
+    background: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    background-blend-mode: normal;
+    mix-blend-mode: normal;
     display: block;
 }
 
-/* Tagline en gris */
 .footer-tagline {
     font-size: 14px;
-    color: #666 !important;
+    color: #ffffff;
     line-height: 1.6;
     text-align: center;
 }
@@ -74,8 +71,8 @@
 .footer-social a {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #FFB3D9, #B8A9E8) !important;
-    color: white !important;
+    background: linear-gradient(135deg, #6fb0c9, #6fb0c9);
+    color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -86,15 +83,15 @@
 }
 
 .footer-social a:hover {
-    background: linear-gradient(135deg, #5AB9B5, #6DB5D8) !important;
-    color: white !important;
+    background: linear-gradient(135deg, #FFB3D9, #FFB3D9);
+    color: white;
     transform: translateY(-3px);
 }
 
 /* ----- COLUMNAS 2 Y 3: CONTACTO Y HORARIOS ----- */
 /* Headers de secciones en turquesa */
 .footer-section h3 {
-    color: #5AB9B5 !important;
+    color: #ffffff;
     font-size: 16px;
     margin-bottom: 20px;
     font-family: 'Poppins', 'Inter', sans-serif;
@@ -118,7 +115,7 @@
 
 /* Íconos de contacto en turquesa */
 .contact-icon {
-    color: #5AB9B5 !important;
+    color: #5AB9B5;
     flex-shrink: 0;
     font-size: 18px;
     margin-top: 0;
@@ -128,12 +125,12 @@
 
 /* Texto general en gris oscuro */
 .contact-item div {
-    color: #2B3A42 !important;
+    color: #ffffff;
 }
 
 .small-text {
     font-size: 12px;
-    color: #666 !important;
+    color: #ffffff;
     font-style: italic;
 }
 
@@ -141,12 +138,12 @@
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 1.6;
-    color: #2B3A42 !important;
+    color: #ffffff;
 }
 
 /* Horarios - negritas en turquesa */
 .hours-list strong {
-    color: #5AB9B5 !important;
+    color: #ffffff;
 }
 
 /* ----- MAPA CON BORDE TURQUESA ----- */
@@ -191,8 +188,8 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: #25D366 !important;
-    color: white !important;
+    background: #25D366;
+    color: white;
     padding: 18px 35px;
     border-radius: 50px;
     text-decoration: none;
@@ -204,7 +201,7 @@
 }
 
 .footer-cta-button:hover {
-    background: #1faa52 !important;
+    background: #1faa52;
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(37, 211, 102, 0.5);
 }
@@ -220,7 +217,7 @@
 
 /* ----- COPYRIGHT CON LÍNEA SEPARADORA TURQUESA ----- */
 .footer-bottom {
-    border-top: 1px solid rgba(90, 185, 181, 0.3) !important;
+    border-top: 1px solid rgba(90, 185, 181, 0.3);
     padding-top: 25px;
     margin-top: 30px;
     text-align: center;
@@ -228,17 +225,17 @@
 }
 
 .footer-bottom p {
-    color: #666 !important;
+    color: #ffffff;
 }
 
 /* Links en el footer */
 .footer a:not(.footer-cta-button):not(.footer-social a) {
-    color: #5AB9B5 !important;
+    color: #5AB9B5;
     text-decoration: none;
 }
 
 .footer a:not(.footer-cta-button):not(.footer-social a):hover {
-    color: #FFB3D9 !important;
+    color: #FFB3D9;
 }
 
 /* ========================================
@@ -271,7 +268,7 @@
 @media (max-width: 768px) {
     /* Asegurar que el fondo claro se mantenga en mobile */
     .footer {
-        background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%) !important;
+        background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%);
         padding: 40px 20px 25px;
     }
 
@@ -358,7 +355,7 @@
     .footer p,
     .contact-item div,
     .hours-list p {
-        color: #2B3A42 !important;
+        color: #2B3A42;
     }
 }
 
@@ -401,14 +398,14 @@
 /* High contrast mode support */
 @media (prefers-contrast: high) {
     .footer {
-        background: #ffffff !important;
+        background: #ffffff;
         border-top: 3px solid #000000;
     }
 
     .contact-item div,
     .footer-bottom p,
     .hours-list p {
-        color: #000000 !important;
+        color: #000000;
     }
 
     .footer-cta-button {

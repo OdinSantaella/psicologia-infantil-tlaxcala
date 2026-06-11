@@ -2,7 +2,7 @@
    CTA SECTION
 ======================================== */
 .cta-section {
-    background: linear-gradient(135deg, #5AB9B5, #6DB5D8);
+    background: linear-gradient(135deg, #6DB5D8, #6DB5D8);
     padding: 80px 40px;
     text-align: center;
     color: white;
@@ -11,6 +11,7 @@
 .cta-section h2 {
     font-size: 42px;
     margin-bottom: 20px;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
@@ -23,13 +24,20 @@
 }
 
 .cta-section .hero-cta {
-    background: #FFD93D;
+    background: #ffffff;
     color: #2B3A42;
     font-size: 20px;
     padding: 20px 40px;
     border-radius: 12px;
     font-weight: bold;
 }
+
+.cta-section .hero-cta:hover {
+    background: #ffffff ;
+    transform: translateY(-3px) scale(1.05) ;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25) ;
+}
+
 
 .cta-button {
     padding: 10px 24px ;
