@@ -25,4 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeaderScrollEffect();
     initButtonEffects();
     initPerformanceOptimizations();
+    initScrollHeader();
 });

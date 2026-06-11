@@ -13,8 +13,13 @@
     background: #FFFFFF;
     border-bottom: 2px solid #5AB9B5;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.header-hidden {
+    transform: translateY(-100%);
+}
+
 
 .header.scrolled {
     box-shadow: 0 4px 20px rgba(90, 185, 181, 0.25);
